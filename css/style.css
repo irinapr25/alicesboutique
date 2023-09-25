@@ -600,11 +600,6 @@ body {
             column-gap: 0.625rem;
   }
 }
-.header__menu {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-}
 /* LOGO */
 .logo {
   display: grid;
@@ -1141,6 +1136,14 @@ body {
      -moz-column-gap: 20px;
           column-gap: 20px;
   row-gap: 10px;
+}
+@media (max-width: 47.99875em) {
+  .contacts-menu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
 }
 .contacts-menu__link {
   display: -webkit-box;
