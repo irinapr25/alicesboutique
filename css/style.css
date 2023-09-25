@@ -573,6 +573,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-column-gap: 1.25rem;
+     -moz-column-gap: 1.25rem;
+          column-gap: 1.25rem;
   /* Tablet - max-width: 767.98px */
 }
 @media (min-width: 81.875em) {
@@ -597,13 +600,15 @@ body {
             column-gap: 0.625rem;
   }
 }
-.header__logo {
-  margin-right: auto;
+.header__menu {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 /* LOGO */
 .logo {
   display: grid;
-  grid-template-columns: 23.2835820896% 1fr;
+  grid-template-columns: 23.2835820896% auto;
   margin-left: -0.1875rem;
   position: relative;
   z-index: 5;
@@ -655,17 +660,17 @@ body {
 }
 @media (min-width: 81.875em) {
   .logo__title {
-    font-size: 2.25rem;
+    font-size: 3rem;
   }
 }
 @media (min-width: 20em) and (max-width: 81.875em) {
   .logo__title {
-    font-size: clamp( 1.375rem , 1.0921717172rem + 1.4141414141vw , 2.25rem );
+    font-size: clamp( 1.625rem , 1.1805555556rem + 2.2222222222vw , 3rem );
   }
 }
 @media (max-width: 20em) {
   .logo__title {
-    font-size: 1.375rem;
+    font-size: 1.625rem;
   }
 }
 .logo__text {
@@ -682,17 +687,17 @@ body {
 }
 @media (min-width: 81.875em) {
   .logo__text {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 }
 @media (min-width: 20em) and (max-width: 81.875em) {
   .logo__text {
-    font-size: clamp( 0.5625rem , 0.461489899rem + 0.5050505051vw , 0.875rem );
+    font-size: clamp( 0.625rem , 0.5037878788rem + 0.6060606061vw , 1rem );
   }
 }
 @media (max-width: 20em) {
   .logo__text {
-    font-size: 0.5625rem;
+    font-size: 0.625rem;
   }
 }
 .logo__icon {
