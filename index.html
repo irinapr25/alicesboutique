@@ -1,0 +1,1597 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Alice's boutique - животные выращенные с любовью</title>
+
+	<!-- <meta name="description" content="Мейн-кун, Абиссинская порода, Канадский сфинкс - WCF питомник LV"> -->
+	<meta name="description" content="WCF Сертифицированный питомник Мейн-кун, Абиссинская порода, Канадский сфинкс">
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;600&family=Dancing+Script:wght@600;700&family=Lato&family=Montserrat&family=Open+Sans:wght@300;400;500;700&family=Poppins:wght@300;400;500;700&family=Roboto&family=Source+Sans+3:wght@400;600;700;900&family=Tangerine:wght@400;700&family=Ubuntu&Oswald:wght@600&family=Playfair+Display:wght@600&Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap"
+		rel="stylesheet">
+
+	<!-- <link rel="stylesheet" href="css/reset.css"> -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- HEADER -->
+		<header class="header">
+			<div class="header__container">
+				<!-- LOGO -->
+				<a class="header__logo logo" data-goto="#home" href="#home">
+					<div class="logo__img _ibg">
+						<img src="icons/logo/cat.svg" alt="кот иконка">
+					</div>
+					<p class="logo__desc">
+						<span class="logo__title">Alice's Boutique
+							<!-- <img class="logo__icon" src="icons/heart.svg" alt="сердце иконка"> -->
+						</span>
+						<span class="logo__text">pets raised with love
+							<img class="logo__icon" src="icons/logo/heart.svg" alt="сердце иконка">
+						</span>
+					</p>
+				</a>
+				<!-- /logo -->
+
+				<!-- MENU-NAV -->
+				<nav class="header__menu menu">
+					<div class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a class="menu__link _active" data-goto="#home" href="#home"><span>Главная</span></a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" data-goto="#about" href="#about"><span>О&nbsp;нас</span></a>
+							</li>
+							<li class="menu__item">
+								<!-- <a class="menu__link" data-goto="#breed" href="#breed"><span>Породы</span></a> -->
+								<a class="menu__link" href="#"><span>Породы</span></a>
+								<span class="menu__arrow arrow"></span>
+								<!-- SUB-MENU -->
+								<nav class="menu__sub-menu sub-menu">
+									<ul class="sub-menu__list">
+										<li class="sub-menu__item">
+											<a class="sub-menu__link" href="#breed-maine-coon" data-goto="#breed-maine-coon">
+												<span class="sub-menu__text">Мейн-кун</span>
+											</a>
+										</li>
+										<li class="sub-menu__item">
+											<a class="sub-menu__link" href="#breed-abyssinian" data-goto="#breed-abyssinian">
+												<span class="sub-menu__text">Абиссинская&nbsp;порода</span>
+											</a>
+										</li>
+										<li class="sub-menu__item">
+											<a class="sub-menu__link" href="#breed-sphynx" data-goto="#sphynx">
+												<span class="sub-menu__text">Канадский&nbsp;сфинкс</span>
+											</a>
+										</li>
+									</ul>
+								</nav>
+								<!-- sub-menu -->
+
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" data-goto="#kittens" href="#kittens"><span>Котята</span></a>
+								<span class="menu__arrow arrow"></span>
+								<!-- SUB-MENU -->
+								<nav class="menu__sub-menu sub-menu sub-menu_right">
+									<ul class="sub-menu__list">
+										<li class="sub-menu__item">
+											<a class="sub-menu__link" href="#kittens-maine-coon" data-goto="#kittens-maine-coon">
+												<span class="sub-menu__text">Мейн-кун</span>
+											</a>
+										</li>
+										<li class="sub-menu__item">
+											<a class="sub-menu__link" href="#kittens-abyssinian" data-goto="#kittens-abyssinian">
+												<span class="sub-menu__text">Абиссинская&nbsp;порода</span>
+											</a>
+										</li>
+										<li class="sub-menu__item">
+											<a class="sub-menu__link" href="#breed-sphynx" data-goto="#sphynx">
+												<span class="sub-menu__text">Канадский&nbsp;сфинкс</span>
+											</a>
+										</li>
+									</ul>
+								</nav>
+								<!-- sub-menu -->
+							</li>
+							<!-- <li class="menu__item">
+								<a class="contacts-menu__link" href="tel:0037127485880" target="_blank">
+									<div class="contacts-menu__icon contact-icon">
+										<svg>
+											<use xlink:href="icons/icons.svg#phone"></use>
+										</svg>
+									</div>
+									<span>(+371) 27-485-880</span>
+								</a>
+							</li> -->
+						</ul>
+					</div>
+					<div class="menu__contacts contacts-menu">
+						<a class="contacts-menu__link" href="tel:0037127485880" target="_blank">
+							<div class="contacts-menu__icon contact-icon">
+								<svg>
+									<use xlink:href="icons/icons.svg#phone"></use>
+								</svg>
+							</div>
+							<span class="contacts-menu__text">(+371) 27-485-880</span>
+						</a>
+						<a class="contacts-menu__link" href="https://wa.me/37127485880" target="_blank">
+							<div class="contacts-menu__icon social-icon social-icon_whats-app">
+								<svg>
+									<use xlink:href="icons/icons.svg#whats-app"></use>
+								</svg>
+							</div>
+						</a>
+					</div>
+				</nav>
+				<!-- /menu-nav -->
+
+				<!-- LANGUAGE -->
+				<div class="header__lang lang">
+					<button class="lang__button">
+						<svg>
+							<use xlink:href="icons/icons.svg#globe"></use>
+						</svg>
+					</button>
+					<!-- <img src="icons/other/globe-solid.svg" alt="глобус иконка"> -->
+					<ul class="lang__list">
+						<li class="lang__item">
+							<a class="lang__link" data-lang="ru" href="#">RU</a>
+						</li>
+						<li class="lang__item">
+							<a class="lang__link" data-lang="en" href="#">EN</a>
+						</li>
+						<li class="lang__item">
+							<a class="lang__link" data-lang="lv" href="#">LV</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /language -->
+
+				<!-- BURGER -->
+				<button class="icon-menu" type="button">
+					<span></span>
+				</button>
+				<!-- /burger -->
+			</div>
+		</header>
+		<!-- /header -->
+
+		<!-- MAIN-PAGE -->
+		<main class="page">
+			<!-- MAIN -->
+			<section class="page__main main" id="home">
+				<div class="main__container">
+					<!-- MAIN CONTENT-TEXT -->
+					<div class="main__content">
+						<h1 class="main__title">
+							Воплощение нежности и&nbsp;великолепия в&nbsp;каждом котенке!
+						</h1>
+						<div class="main__text">
+							<p>Добро пожаловать в&nbsp;наш уютный кошачий&nbsp;питомник!</p>
+							<p>Откройте двери в&nbsp;мир прекрасных мурчащих&nbsp;друзей.</p>
+						</div>
+						<!-- <a class="main__link button" href="">породистые котята ждут вас!</a> -->
+						<a class="main__link button" href="#breed" data-goto="#kittens-maine-coon">Ваше счастье начинается&nbsp;здесь</a>
+					</div>
+
+					<!-- MAIN IMAGES -->
+					<div class="main__images images-main">
+						<a class="images-main__item images-main__item_1 _ibg" href="#breed-maine-coon" data-goto="#breed-maine-coon">
+							<img src="img/maine-coon/10.jpg" alt="мейн кун котенок фото">
+							<!-- <img src="images/3Ir164aDGjNWSU9L3JDO--1--l7vl7.jpg" alt="мейн кун котенок фото"> -->
+							<span class="images-main__overlay">Мейн кун</span>
+						</a>
+						<a class="images-main__item images-main__item_2 _ibg" href="#breed-abyssinian" data-goto="#breed-abyssinian">
+							<img src="img/abyssinians/10.jpg" alt="котенок абиссинской породы фото">
+							<span class="images-main__overlay">Абиссинская порода</span>
+						</a>
+						<a class="images-main__item images-main__item_3 _ibg" href="#breed-sphynx" data-goto="#sphynx">
+							<img src="img/sphinx/01.jpg" alt="канадский сфинкс котенок фото">
+							<span class="images-main__overlay">Канадский сфинкс</span>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- ABOUT US -->
+			<section class="page__about about" id="about">
+				<div class="about__container">
+					<!-- <div class="about__body"> -->
+					<div class="about__images images-about">
+						<a class="images-about__item images-about__item_1 _ibg" href="#">
+							<img src="img/maine-coon/20-2.jpg" alt="мейн кун котенок фото">
+						</a>
+						<a class="images-about__item images-about__item_2 _ibg" href="#">
+							<img src="img/maine-coon/21.jpg" alt="котенок абиссинской породы фото">
+						</a>
+					</div>
+					<div class="about__content">
+						<div class="about__label label">О нас</div>
+						<h2 class="about__title title">Несколько слов о&nbsp;нашем&nbsp;питомнике</h2>
+						<div class="about__text">
+							<p>
+								Наш&nbsp; домашний питомник, расположенный в&nbsp;Латвии, за городом, в экологически чистой зоне.
+							</p>
+							<p>
+								У&nbsp;нас вы&nbsp;найдете прекрасных котят породы <a href="#breed-maine-coon" data-goto="#breed-maine-coon">Мейн-кун</a>, <a href="#breed-abyssinian"
+									data-goto="#breed-abyssinian">Абиссинской кошки</a> и <a href="#breed-sphynx" data-goto="#sphynx">Канадского сфинкса</a>.
+							</p>
+							<p>
+								Наш питомник ориентирован на&nbsp;получение здоровых, красивых котят, которые полностью соответствуют установленному стандарту своей породы.
+							</p>
+							<p>
+								Питомник официально зарегистрирован в&nbsp;системе WCF (World Cat Federation).
+							</p>
+							<p>
+								Каждый котенок в&nbsp;нашем питомнике выращивается в&nbsp;атмосфере любви и&nbsp;заботы, что делает их&nbsp;идеальными компаньонами для вашей семьи.
+							</p>
+						</div>
+						<a class="about__link button" href="#kittens-maine-coon" data-goto="#kittens-maine-coon">Выбери своего любимца</a>
+					</div>
+				</div>
+			</section>
+			<!-- /about us -->
+
+			<!-- OFFER -->
+			<section class="page__offer offer">
+				<div class="offer__container">
+					<div class="offer__label label">Услуги</div>
+					<h3 class="offer__title title">Выбирая нас, вы&nbsp;получаете</h3>
+					<div class="offer__items">
+						<!-- CARD -->
+						<article class="offer__item item-offer">
+							<div class="item-offer__header">
+								<div class="item-offer__icon">
+									<!-- <img src="icons/offer/hand-holding-heart-solid.svg" alt="сердце на руке иконка"> -->
+									<svg>
+										<use xlink:href="icons/icons.svg#hand-holding-heart-solid"></use>
+									</svg>
+								</div>
+								<h4 class="item-offer__sub-title">Любовь и&nbsp;забота</h4>
+							</div>
+							<div class="item-offer__text">
+								<p>Каждый котенок в&nbsp;нашем питомнике выращивается в&nbsp;атмосфере любви и&nbsp;заботы, что делает их&nbsp;идеальными компаньонами для вашей семьи.</p>
+								<p>С&nbsp;первого дня своей жизни каждый котенок учится взаимодействовать с&nbsp;людьми, поскольку все котята растут вместе с&nbsp;нами.</p>
+								<p>Котята готовы к&nbsp;переезду в&nbsp;новый дом не&nbsp;ранее чем в&nbsp;возрасте 3,5&nbsp;месяцев, что гарантирует их&nbsp;зрелость и&nbsp;способность адаптироваться.</p>
+							</div>
+						</article>
+
+						<article class="offer__item item-offer">
+							<div class="item-offer__header">
+								<div class="item-offer__icon">
+									<!-- <img src="icons/offer/user-md-solid.svg" alt="врач иконка"> -->
+									<svg>
+										<use xlink:href="icons/icons.svg#user-md-solid"></use>
+									</svg>
+								</div>
+								<h4 class="item-offer__sub-title">Здоровье и&nbsp;безопасность</h4>
+							</div>
+							<div class="item-offer__text">
+								<p>Все наши котята имеют необходимые вакцинации по&nbsp;возрасту, проходят дегельминтизацию в&nbsp;спокойствии с графиком.</p>
+								<p>Получают должное медицинское внимание, чтобы гарантировать их&nbsp;здоровье.</p>
+								<p>Каждый котенок имеет чип.
+								<p>Они уже привыкли использовать лоток и&nbsp;когтеточку, что значительно облегчит адаптацию в&nbsp;новом доме.</p>
+							</div>
+						</article>
+
+						<article class="offer__item item-offer">
+							<div class="item-offer__header">
+								<div class="item-offer__icon">
+									<!-- <img src="icons/offer/comments-solid.svg" alt="комментарии иконка"> -->
+									<svg>
+										<use xlink:href="icons/icons.svg#comments-solid"></use>
+									</svg>
+								</div>
+								<h4 class="item-offer__sub-title">Консультации и&nbsp;рекомендации</h4>
+							</div>
+							<div class="item-offer__text">
+								<p>Мы&nbsp;предоставляем консультации по&nbsp;выбору корма, составлению меню, чтобы обеспечить правильное питание и&nbsp;разнообразие.</p>
+								<p>Даем рекомендации по&nbsp;выбору необходимых принадлежностей по&nbsp;уходу за&nbsp;вашим новым другом.</p>
+								<p>Консультируем по вопросам шоу-карьеры котенка.</p>
+								<p>Оказываем помощь при переезде котят в&nbsp;другие города или страны.</p>
+							</div>
+						</article>
+
+						<article class="offer__item item-offer">
+							<div class="item-offer__header">
+								<div class="item-offer__icon">
+									<!-- <img src="icons/offer/passport-solid.svg" alt="паспорт иконка"> -->
+									<svg>
+										<use xlink:href="icons/icons.svg#passport-solid"></use>
+									</svg>
+								</div>
+								<h4 class="item-offer__sub-title">Оформление и&nbsp;договора</h4>
+							</div>
+							<div class="item-offer__text">
+								<p>Практически любой наш котенок может быть продан как pet-class (домашний любимец) или как breed-class (с&nbsp;правом разведения).</p>
+								<p>На&nbsp;каждого нашего котенка оформляется родословная, Международный ветеринарный паспорт и&nbsp;Договор с&nbsp;покупателем.</p>
+								<p>Мы&nbsp;также оказываем поддержку в&nbsp;оформлении всех необходимых выездных документов в&nbsp;другие страны.</p>
+							</div>
+						</article>
+
+						<article class="offer__item item-offer">
+							<div class="item-offer__header">
+								<div class="item-offer__icon">
+									<!-- <img src="icons/offer/stamp-solid.svg" alt="штамп иконка"> -->
+									<svg>
+										<use xlink:href="icons/icons.svg#stamp-solid"></use>
+									</svg>
+								</div>
+								<h4 class="item-offer__sub-title">Стандарт породы</h4>
+							</div>
+							<div class="item-offer__text">
+								<p>Мы&nbsp;придерживаемся высоких стандартов породы, чтобы наши котята соответствовали всем характерным чертам своих пород.</p>
+								<p>Только здоровые физически и&nbsp;психически кошки, тестированные на&nbsp;генетические заболевания допускаются нами в&nbsp;разведение.</p>
+								<p>Мы&nbsp;участвуем в&nbsp;выставках и&nbsp;имеем выставочные титулы.</p>
+							</div>
+						</article>
+
+						<article class="offer__item item-offer">
+							<div class="item-offer__header">
+								<div class="item-offer__icon">
+									<!-- <img src="icons/offer/paw-solid.svg" alt="лапа иконка"> -->
+									<svg>
+										<use xlink:href="icons/icons.svg#paw-solid"></use>
+									</svg>
+								</div>
+								<h4 class="item-offer__sub-title">Разнообразие и&nbsp;прозрачность</h4>
+							</div>
+							<div class="item-offer__text">
+								<p>В&nbsp;нашем питомнике представлены разные породы, позволяя вам выбрать именно&nbsp;ту, которая соответствует вашим предпочтениям.</p>
+								<p>Мы&nbsp;ценим открытость и&nbsp;прозрачность в&nbsp;отношениях с&nbsp;нашими клиентами, предоставляя всю необходимую информацию о&nbsp;котятах.</p>
+								<p>Мы&nbsp;доступны для общения с&nbsp;владельцами наших котят 24/7. Вы&nbsp;всегда можете поделиться с&nbsp;нами радостью или рассказать о&nbsp;проблеме.</p>
+							</div>
+						</article>
+					</div>
+				</div>
+
+			</section>
+			<!-- /offer -->
+
+			<!-- BREED MAINE-COON -->
+			<!-- <section class="page__breed breed" id="breed"> -->
+			<section class="page__breed breed" id="breed-maine-coon">
+				<div class="breed__container">
+					<article class="breed__article article-breed">
+						<div class="article-breed__image article-breed__image_maine-coon _ibg">
+							<img src="img/maine-coon/11.jpg" alt="Кошка породы Мейн-кун">
+							<!-- <img src="img/div2.jpg" alt="Кошка породы Мейн-кун"> -->
+						</div>
+						<div class="article-breed__content">
+							<div class="article-breed__label label">Мейн-кун</div>
+							<!-- <h2 class="article-breed__title title"><span>Мейн-кун</span>Величие в Кошачьем Мире</h2> -->
+							<h2 class="article-breed__title title">Величие в кошачьем мире</h2>
+							<div class="article-breed__text">
+								<p>
+									Мейн-кун&nbsp;&mdash; это сокровище кошачьего мира, олицетворение величия и&nbsp;нежности. Эти громадные кошки обладают внушительной внешностью, но&nbsp;за&nbsp;мускулистым
+									телосложением скрывается мягкая натура.
+								</p>
+
+								<p>
+									Выразительные глаза Мейн-кунов, а&nbsp;также их&nbsp;уникальные окрасы&nbsp;&mdash; от&nbsp;полосатых до&nbsp;однотонных, добавляют им&nbsp;индивидуальности. Длинные,
+									пушистые хвосты и&nbsp;характерные кисточки на&nbsp;ушах делают их&nbsp;неповторимыми.
+								</p>
+
+								<p>
+									Мейн-куны обладают изысканным нравом, демонстрируя невероятное спокойствие и&nbsp;терпимость.
+									Они дружелюбны, общительны и&nbsp;прекрасно ладят с&nbsp;другими питомцами и&nbsp;детьми.
+								</p>
+
+								<p>
+									Мейн-кун&nbsp;&mdash; это спутник жизни. Их&nbsp;присутствие наполняет дом гармонией и&nbsp;радостью.
+								</p>
+							</div>
+							<a class="article-breed__link button" href="#kittens-maine-coon" data-goto="#kittens-maine-coon">
+								Истинная любовь в&nbsp;каждой шерстинке
+							</a>
+						</div>
+					</article>
+				</div>
+			</section>
+			<!-- breeds maine-coon -->
+
+			<!-- KITTENS MAINE-COON -->
+			<section class="page__kittens kittens" id="kittens-maine-coon">
+				<div class="kittens__container">
+					<div class="kittens__label label">Котята</div>
+					<h3 class="kittens__title title">Наши котята <span>Мейн-кун</span></h3>
+					<div class="kittens__content">
+						<div class="kittens__text">
+							<p>Обратите внимание, возможно один из&nbsp;наших милых котят ждет именно вас, чтобы стать вашим верным и&nbsp;ласковым спутником!</p>
+							<p>Зарезервировать понравившегося малыша можно заранее.</p>
+						</div>
+						<!-- SOCIAL -->
+						<div class="kittens__social social">
+							<!-- <h6 class="social__title">Следите за&nbsp;нами в&nbsp;социальных сетях</h6> -->
+							<!-- <div class="social__links"> -->
+							<a class="social__link social__link_fb" href="https://www.facebook.com/profile.php?id=100083832633960" target="_blank">
+								<!-- <img src="icons/social/facebook-f.svg" alt="facebook иконка"> -->
+								<svg>
+									<use xlink:href="icons/icons.svg#facebook-f"></use>
+								</svg>
+							</a>
+							<a class="social__link social__link_insta" href="https://www.instagram.com/coonkitten_alices_boutique/" target="_blank">
+								<!-- <a class="social__link" href="https://www.instagram.com/abyssinians_alices_boutique/" target="_blank">
+										<a class="social__link" href="https://www.instagram.com/alices_boutique_sphinx/" target="_blank"> -->
+								<!-- <img src="icons/social/instagram.svg" alt="instagram иконка"> -->
+								<svg>
+									<use xlink:href="icons/icons.svg#instagram"></use>
+								</svg>
+							</a>
+							<a class="social__link" href="https://www.tiktok.com/@annairbe12" target="_blank">
+								<!-- <img src="icons/social/tiktok.svg" alt="tiktok иконка"> -->
+								<svg>
+									<use xlink:href="icons/icons.svg#tik-tok"></use>
+								</svg>
+							</a>
+							<!-- </div> -->
+						</div>
+						<!-- /social -->
+					</div>
+
+					<nav class="kittens__menu menu-kittens">
+						<ul class="menu-kittens__list">
+							<li class="menu-kittens__item _active" data-filter="all">Все</li>
+							<li class="menu-kittens__item" data-filter="available">Доступны</li>
+							<li class="menu-kittens__item" data-filter="letter-h">Помет H</li>
+							<li class="menu-kittens__item" data-filter="letter-i">Помет I</li>
+							<li class="menu-kittens__item" data-filter="letter-i">Помет N</li>
+						</ul>
+					</nav>
+
+					<!-- KITTENS MAINE-COON IMAGES -->
+					<div class="kittens__images" id="kitten-maine-coon-cards">
+						<!-- HILLARY -->
+						<div class="kittens__item item-kitten">
+							<a class="item-kitten__image _ibg" data-fslightbox="gallery-maine-coon-hillary" href="maine-coon/img/hillary-2.jpg">
+								<img src="maine-coon/img/hillary-2.jpg" alt="котенок Мейн-кун">
+							</a>
+							<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-hillary" href="maine-coon/img/hillary-3.jpg">
+								<img src="maine-coon/img/hillary-3.jpg" alt="котенок Мейн-кун">
+							</a>
+							<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-hillary" href="maine-coon/img/hillary-4.jpg">
+								<img src="maine-coon/img/hillary-4.jpg" alt="котенок Мейн-кун">
+							</a>
+							<div class="item-kitten__content">
+								<div class="item-kitten__header">
+									<p class="item-kitten__name">Hillary</p>
+									<p class="item-kitten__option">доступна</p>
+								</div>
+								<div class="item-kitten__table">
+									<p class="item-kitten__label">Пол:</p>
+									<p class="item-kitten__value">девочка</p>
+
+									<p class="item-kitten__label">Помёт:</p>
+									<p class="item-kitten__value">H 28.03.2023</p>
+
+									<p class="item-kitten__label">Окрас:</p>
+									<p class="item-kitten__value">чёрный дымный <span>(MCO ns)</span></p>
+								</div>
+							</div>
+							<div class="item-kitten__price">
+								Цена: <span>1500 €</span>
+							</div>
+						</div>
+
+						<!-- Hi.. -->
+						<div class="kittens__item item-kitten">
+							<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-grey" href="maine-coon/img/grey-1.jpg">
+								<img src="maine-coon/img/grey-1.jpg" alt="котенок Мейн-кун">
+							</a>
+							<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-grey" href="maine-coon/img/grey-2.jpg">
+								<img src="maine-coon/img/grey-2.jpg" alt="котенок Мейн-кун">
+							</a>
+							<a class="item-kitten__image _ibg" data-fslightbox="gallery-maine-coon-grey" href="maine-coon/img/grey-3.jpg">
+								<img src="maine-coon/img/grey-3.jpg" alt="котенок Мейн-кун">
+							</a>
+							<div class="item-kitten__content">
+								<div class="item-kitten__header">
+									<p class="item-kitten__name">Hi</p>
+									<p class="item-kitten__option">доступна</p>
+								</div>
+								<div class="item-kitten__table">
+									<p class="item-kitten__label">Пол:</p>
+									<p class="item-kitten__value">девочка</p>
+
+									<p class="item-kitten__label">Помёт:</p>
+									<p class="item-kitten__value">H 28.03.2023</p>
+
+									<p class="item-kitten__label">Окрас:</p>
+									<p class="item-kitten__value">голубой <span>(MCO a)</span></p>
+								</div>
+							</div>
+							<div class="item-kitten__price">
+								Цена: <span>1500 €</span>
+							</div>
+						</div>
+
+						<!-- HILDA-2 -->
+						<div class="kittens__item item-kitten">
+							<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-hilda" href="maine-coon/img/hilda-4.jpg">
+								<img src="maine-coon/img/hilda-4.jpg" alt="котенок Мейн-кун">
+							</a>
+							<a class="item-kitten__image _ibg" data-fslightbox="gallery-maine-coon-hilda" href="maine-coon/img/hilda-5.jpg">
+								<img src="maine-coon/img/hilda-5.jpg" alt="котенок Мейн-кун">
+							</a>
+							<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-hilda" href="maine-coon/img/hilda-6.jpg">
+								<img src="maine-coon/img/hilda-6.jpg" alt="котенок Мейн-кун">
+							</a>
+							<div class="item-kitten__content">
+								<div class="item-kitten__header">
+									<p class="item-kitten__name">Hilda</p>
+									<p class="item-kitten__option">доступна</p>
+								</div>
+
+								<div class="item-kitten__table">
+									<p class="item-kitten__label">Пол:</p>
+									<p class="item-kitten__value">девочка</p>
+
+									<p class="item-kitten__label">Помёт:</p>
+									<p class="item-kitten__value">H 28.03.2023</p>
+
+									<p class="item-kitten__label">Окрас:</p>
+									<p class="item-kitten__value">голубой <span>(MCO a)</span></p>
+								</div>
+							</div>
+							<div class="item-kitten__price">
+								Цена: <span>1500 €</span>
+							</div>
+						</div>
+
+						<!-- HERCULES  -->
+						<div class="kittens__item item-kitten">
+							<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-hercules" href="maine-coon/img/hercules-1.jpg">
+								<img src="maine-coon/img/hercules-1.jpg" alt="котенок Мейн-кун">
+							</a>
+							<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-hercules" href="maine-coon/img/hercules-2.jpg">
+								<img src="maine-coon/img/hercules-2.jpg" alt="котенок Мейн-кун">
+							</a>
+							<a class="item-kitten__image _ibg" data-fslightbox="gallery-maine-coon-hercules" href="maine-coon/img/hercules-3.jpg">
+								<img src="maine-coon/img/hercules-3.jpg" alt="котенок Мейн-кун">
+							</a>
+
+							<div class="item-kitten__content">
+								<div class="item-kitten__header">
+									<p class="item-kitten__name">Hercules</p>
+									<p class="item-kitten__option">в рассмотрении</p>
+								</div>
+								<div class="item-kitten__table">
+									<p class="item-kitten__label">Пол:</p>
+									<p class="item-kitten__value">мальчик</p>
+
+									<p class="item-kitten__label">Помёт:</p>
+									<p class="item-kitten__value">H 28.03.2023</p>
+
+									<p class="item-kitten__label">Окрас:</p>
+									<p class="item-kitten__value">чёрный дымный (MCO&nbsp;ns)</p>
+								</div>
+							</div>
+							<div class="item-kitten__price">
+								Цена: <span>1500 €</span>
+							</div>
+						</div>
+
+						<!-- HILDA -->
+						<div class="kittens__item item-kitten">
+							<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-hilda-2" href="maine-coon/img/hilda-1.jpg">
+								<img src="maine-coon/img/hilda-1.jpg" alt="котенок Мейн-кун">
+							</a>
+							<a class="item-kitten__image _ibg" data-fslightbox="gallery-maine-coon-hilda-2" href="maine-coon/img/hilda-2.jpg">
+								<img src="maine-coon/img/hilda-2.jpg" alt="котенок Мейн-кун">
+							</a>
+							<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-hilda-2" href="maine-coon/img/hilda-3.jpg">
+								<img src="maine-coon/img/hilda-3.jpg" alt="котенок Мейн-кун">
+							</a>
+							<div class="item-kitten__content">
+								<div class="item-kitten__header">
+									<p class="item-kitten__name">Hilda</p>
+									<p class="item-kitten__option">доступна</p>
+								</div>
+
+								<div class="item-kitten__table">
+									<p class="item-kitten__label">Пол:</p>
+									<p class="item-kitten__value">девочка</p>
+
+									<p class="item-kitten__label">Помёт:</p>
+									<p class="item-kitten__value">H 28.03.2023</p>
+
+									<p class="item-kitten__label">Окрас:</p>
+									<p class="item-kitten__value">голубой <span>(MCO a)</span></p>
+								</div>
+							</div>
+							<div class="item-kitten__price">
+								Цена: <span>1500 €</span>
+							</div>
+						</div>
+
+						<!-- marble -->
+						<div class="kittens__item item-kitten">
+							<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-marble" href="maine-coon/img/marble-1.jpg">
+								<img src="maine-coon/img/marble-1.jpg" alt="котенок Мейн-кун">
+							</a>
+							<a class="item-kitten__image _ibg" data-fslightbox="gallery-maine-coon-marble" href="maine-coon/img/marble-2.jpg">
+								<img src="maine-coon/img/marble-2.jpg" alt="котенок Мейн-кун">
+							</a>
+							<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-marble" href="maine-coon/img/marble-3.jpg">
+								<img src="maine-coon/img/marble-3.jpg" alt="котенок Мейн-кун">
+							</a>
+
+							<div class="item-kitten__content">
+								<div class="item-kitten__header">
+									<p class="item-kitten__name">name</p>
+									<p class="item-kitten__option">продана</p>
+								</div>
+
+								<div class="item-kitten__table">
+									<p class="item-kitten__label">Пол:</p>
+									<p class="item-kitten__value">девочка</p>
+
+									<p class="item-kitten__label">Помёт:</p>
+									<p class="item-kitten__value">H 28.03.2023</p>
+
+									<p class="item-kitten__label">Окрас:</p>
+									<p class="item-kitten__value">черный мраморный <span>(MCO n22)</span></p>
+								</div>
+							</div>
+							<div class="item-kitten__price">
+								Цена: <span>1500 €</span>
+							</div>
+						</div>
+
+						<!-- multicolor -->
+						<div class="kittens__item item-kitten">
+							<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-multicolor" href="maine-coon/img/multicolor-1.jpg">
+								<img src="maine-coon/img/multicolor-3.jpg" alt="котенок Мейн-кун">
+							</a>
+							<a class="item-kitten__image _ibg" data-fslightbox="gallery-maine-coon-multicolor" href="maine-coon/img/multicolor-2.jpg">
+								<img src="maine-coon/img/multicolor-2.jpg" alt="котенок Мейн-кун">
+							</a>
+							<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-multicolor" href="maine-coon/img/multicolor-3.jpg">
+								<img src="maine-coon/img/multicolor-3.jpg" alt="котенок Мейн-кун">
+							</a>
+
+							<div class="item-kitten__content">
+								<div class="item-kitten__header">
+									<p class="item-kitten__name">name</p>
+									<p class="item-kitten__option">доступна</p>
+								</div>
+
+								<div class="item-kitten__table">
+									<p class="item-kitten__label">Пол:</p>
+									<p class="item-kitten__value">девочка</p>
+
+									<p class="item-kitten__label">Помёт:</p>
+									<p class="item-kitten__value">H 10.04.2023</p>
+
+									<p class="item-kitten__label">Окрас:</p>
+									<p class="item-kitten__value">мраморный <span>(MCO n22)</span></p>
+								</div>
+							</div>
+							<div class="item-kitten__price">
+								Цена: <span>1500 €</span>
+							</div>
+						</div>
+
+						<!-- HILLARY-2 -->
+						<div class="kittens__item item-kitten">
+							<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-hillary-2" href="maine-coon/img/hillary-5.jpg">
+								<img src="maine-coon/img/hillary-5.jpg" alt="котенок Мейн-кун">
+							</a>
+							<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-hillary-2" href="maine-coon/img/hillary-6.jpg">
+								<img src="maine-coon/img/hillary-6.jpg" alt="котенок Мейн-кун">
+							</a>
+							<a class="item-kitten__image _ibg" data-fslightbox="gallery-maine-coon-hillary-2" href="maine-coon/img/hillary-7.jpg">
+								<img src="maine-coon/img/hillary-7.jpg" alt="котенок Мейн-кун">
+							</a>
+							<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-hillary-2" href="maine-coon/img/hillary-8.jpg">
+								<img src="maine-coon/img/hillary-8.jpg" alt="котенок Мейн-кун">
+							</a>
+							<div class="item-kitten__content">
+								<div class="item-kitten__header">
+									<p class="item-kitten__name">Hillary</p>
+									<p class="item-kitten__option">доступна</p>
+								</div>
+								<div class="item-kitten__table">
+									<p class="item-kitten__label">Пол:</p>
+									<p class="item-kitten__value">девочка</p>
+
+									<p class="item-kitten__label">Помёт:</p>
+									<p class="item-kitten__value">H 28.03.2023</p>
+
+									<p class="item-kitten__label">Окрас:</p>
+									<p class="item-kitten__value">чёрный дымный <span>(MCO ns)</span></p>
+								</div>
+							</div>
+							<div class="item-kitten__price">
+								Цена: <span>1500 €</span>
+							</div>
+
+							<!-- more >> -->
+							<!-- <a class="item-kitten__more" href="#">
+								<p class="item-kitten__text">
+									Подробнее
+								</p>
+								<img src="icons/other/arrows-double-right.svg" alt="стрелки вправо иконка">
+								<div class="item-kitten__icon">
+								</div>
+							</a> -->
+						</div>
+
+						<!-- INVAR -->
+						<div class="kittens__item item-kitten">
+							<a class="item-kitten__image _ibg" data-fslightbox="gallery-maine-coon-invar" href="maine-coon/img/invar-1.jpg">
+								<img src="maine-coon/img/invar-1.jpg" alt="котенок Мейн-кун">
+							</a>
+							<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-invar" href="maine-coon/img/invar-2.jpg">
+								<img src="maine-coon/img/invar-2.jpg" alt="котенок Мейн-кун">
+							</a>
+							<div class="item-kitten__content">
+								<div class="item-kitten__header">
+									<p class="item-kitten__name">Invar</p>
+									<p class="item-kitten__option">зарезервирован</p>
+								</div>
+								<div class="item-kitten__table">
+									<p class="item-kitten__label">Пол:</p>
+									<p class="item-kitten__value">мальчик</p>
+
+									<p class="item-kitten__label">Помёт:</p>
+									<p class="item-kitten__value">I 16.10.2022</p>
+
+									<p class="item-kitten__label">Окрас:</p>
+									<p class="item-kitten__value">чёрный <span>(MCO n)</span></p>
+								</div>
+							</div>
+							<div class="item-kitten__price">
+								Цена: 1500 €
+							</div>
+						</div>
+
+						<!-- ILANA -->
+						<div class="kittens__item item-kitten">
+							<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-ilana" href="maine-coon/img/ilana-1.jpg">
+								<img src="maine-coon/img/ilana-1.jpg" alt="котенок Мейн-кун">
+							</a>
+							<a class="item-kitten__image _ibg" data-fslightbox="gallery-maine-coon-ilana" href="maine-coon/img/ilana-2.jpg">
+								<img src="maine-coon/img/ilana-2.jpg" alt="котенок Мейн-кун">
+							</a>
+
+
+							<div class="item-kitten__content">
+								<div class="item-kitten__header">
+									<p class="item-kitten__name">Ilana</p>
+									<p class="item-kitten__option">в рассмотрении</p>
+								</div>
+								<div class="item-kitten__table">
+									<p class="item-kitten__label">Пол:</p>
+									<p class="item-kitten__value">девочка</p>
+
+									<p class="item-kitten__label">Помёт:</p>
+									<p class="item-kitten__value">I 16.10.2022</p>
+
+									<p class="item-kitten__label">Окрас:</p>
+									<p class="item-kitten__value">голубой <span>(MCO a)</span></p>
+								</div>
+							</div>
+							<div class="item-kitten__price">
+								Цена: <span>1500 €</span>
+							</div>
+						</div>
+
+						<!-- I... -->
+						<div class="kittens__item item-kitten">
+							<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-black" href="maine-coon/img/black-1.jpg">
+								<img src="maine-coon/img/black-1.jpg" alt="котенок Мейн-кун">
+							</a>
+							<a class="item-kitten__image _ibg" data-fslightbox="gallery-maine-coon-black" href="maine-coon/img/black-2.jpg">
+								<img src="maine-coon/img/black-2.jpg" alt="котенок Мейн-кун">
+							</a>
+							<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-black" href="maine-coon/img/black-3.jpg">
+								<img src="maine-coon/img/black-3.jpg" alt="котенок Мейн-кун">
+							</a>
+							<div class="item-kitten__content">
+								<div class="item-kitten__header">
+									<p class="item-kitten__name">I...</p>
+									<p class="item-kitten__option">продан</p>
+								</div>
+								<div class="item-kitten__table">
+
+									<p class="item-kitten__label">Пол:</p>
+									<p class="item-kitten__value">мальчик</p>
+
+									<p class="item-kitten__label">Помёт:</p>
+									<p class="item-kitten__value">I 16.10.2022</p>
+
+									<p class="item-kitten__label">Окрас:</p>
+									<p class="item-kitten__value">черный <span>(MCO n)<span></p>
+								</div>
+							</div>
+							<div class="item-kitten__price">
+								Цена: <span>1500 €</span>
+							</div>
+						</div>
+					</div>
+					<!-- /kittens maine-coon images -->
+				</div>
+			</section>
+			<!-- /kittens maine-coon -->
+			<hr style="background-color: rgba(24, 24, 24, 0.5); height: 1px;">
+			<!-- KITTENS MAINE-COON SPOILERS -->
+			<section class="page__kittens kittens" id="kittens">
+				<div class="kittens__container">
+					<div class="kittens__label label">Котята</div>
+					<h3 class="kittens__title title">Наши котята <span>Мейн-кун</span></h3>
+					<div class="kittens__content">
+						<div class="kittens__text">
+							<p>Обратите внимание, возможно один из&nbsp;наших милых котят ждет именно вас, чтобы стать вашим верным и&nbsp;ласковым спутником!</p>
+							<p>Зарезервировать понравившегося малыша можно заранее.</p>
+						</div>
+						<!-- SOCIAL -->
+						<div class="kittens__social social">
+							<!-- <h6 class="social__title">Следите за&nbsp;нами в&nbsp;социальных сетях</h6> -->
+							<!-- <div class="social__links"> -->
+							<a class="social__link social__link_fb" href="https://www.facebook.com/profile.php?id=100083832633960" target="_blank">
+								<!-- <img src="icons/social/facebook-f.svg" alt="facebook иконка"> -->
+								<svg>
+									<use xlink:href="icons/icons.svg#facebook-f"></use>
+								</svg>
+							</a>
+							<a class="social__link" href="https://www.instagram.com/mainecoon_alices_boutique/" target="_blank">
+								<!-- <a class="social__link" href="https://www.instagram.com/abyssinians_alices_boutique/" target="_blank">
+										<a class="social__link" href="https://www.instagram.com/alices_boutique_sphinx/" target="_blank"> -->
+								<!-- <img src="icons/social/instagram.svg" alt="instagram иконка"> -->
+								<svg>
+									<use xlink:href="icons/icons.svg#instagram"></use>
+								</svg>
+							</a>
+							<a class="social__link" href="https://www.tiktok.com/@annairbe12" target="_blank">
+								<!-- <img src="icons/social/tiktok.svg" alt="tiktok иконка"> -->
+								<svg>
+									<use xlink:href="icons/icons.svg#tiktok"></use>
+								</svg>
+							</a>
+							<!-- </div> -->
+						</div>
+						<!-- /social -->
+					</div>
+
+					<!-- KITTENS MAINE-COON IMAGES SPOILERS -->
+					<!-- <div class="spoilers" data-spoilers data-one-spoiler> -->
+					<div class="kittens__spoilers spoilers" data-spoilers>
+						<div class="spoilers__item">
+							<!-- <button class="spoilers__title title-spoilers _spoiler-active" data-spoiler type="button" tabindex="-1">
+								<span class="title-spoilers__text">Котята Мейн-кун <span>Помёт H</span> 28.03.2023</span> <span class="title-spoilers__arrow"></span>
+							</button> -->
+							<button class="spoilers__title title-spoilers" data-spoiler type="button" tabindex="-1">
+								<span class="title-spoilers__text">Котята Мейн-кун <span>Помёт H</span> 28.03.2023</span> <span class="title-spoilers__arrow"></span>
+							</button>
+							<!--  tabindex="-1" - возможность перехода при помощи Tab -->
+							<div class="spoilers__body">
+								<div class="spoilers__gallery gallery-spoilers">
+									<!-- HILLARY -->
+									<div class="gallery-spoilers__item item-kitten">
+										<a class="item-kitten__image _ibg" data-fslightbox="gallery-maine-coon-hillary" href="maine-coon/img/hillary-2.jpg">
+											<img src="maine-coon/img/hillary-2.jpg" alt="котенок Мейн-кун">
+										</a>
+										<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-hillary" href="maine-coon/img/hillary-3.jpg">
+											<img src="maine-coon/img/hillary-3.jpg" alt="котенок Мейн-кун">
+										</a>
+										<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-hillary" href="maine-coon/img/hillary-4.jpg">
+											<img src="maine-coon/img/hillary-4.jpg" alt="котенок Мейн-кун">
+										</a>
+
+										<div class="item-kitten__content">
+											<div class="item-kitten__header">
+												<p class="item-kitten__name">Hillary</p>
+												<p class="item-kitten__option">доступна</p>
+											</div>
+											<div class="item-kitten__table">
+												<p class="item-kitten__label">Пол:</p>
+												<p class="item-kitten__value">девочка</p>
+
+												<p class="item-kitten__label">Помёт:</p>
+												<p class="item-kitten__value">H 28.03.2023</p>
+
+												<p class="item-kitten__label">Окрас:</p>
+												<p class="item-kitten__value">чёрный дымный <span>(MCO ns)</span></p>
+											</div>
+										</div>
+
+										<div class="item-kitten__price">
+											Цена: 1500 €
+										</div>
+									</div>
+
+									<!-- Hi.. -->
+									<div class="kittens__item item-kitten">
+										<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-grey" href="maine-coon/img/grey-1.jpg">
+											<img src="maine-coon/img/grey-1.jpg" alt="котенок Мейн-кун">
+										</a>
+										<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-grey" href="maine-coon/img/grey-2.jpg">
+											<img src="maine-coon/img/grey-2.jpg" alt="котенок Мейн-кун">
+										</a>
+										<a class="item-kitten__image _ibg" data-fslightbox="gallery-maine-coon-grey" href="maine-coon/img/grey-3.jpg">
+											<img src="maine-coon/img/grey-3.jpg" alt="котенок Мейн-кун">
+										</a>
+										<div class="item-kitten__content">
+											<div class="item-kitten__header">
+												<p class="item-kitten__name">Hi</p>
+												<p class="item-kitten__option">доступна</p>
+											</div>
+											<div class="item-kitten__table">
+												<p class="item-kitten__label">Пол:</p>
+												<p class="item-kitten__value">девочка</p>
+
+												<p class="item-kitten__label">Помёт:</p>
+												<p class="item-kitten__value">H 28.03.2023</p>
+
+												<p class="item-kitten__label">Окрас:</p>
+												<p class="item-kitten__value">голубой <span>(MCO a)</span></p>
+											</div>
+										</div>
+										<div class="item-kitten__price">
+											Цена: 1500 €
+										</div>
+									</div>
+
+									<!-- HILDA-2 -->
+									<div class="kittens__item item-kitten">
+										<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-hilda" href="maine-coon/img/hilda-4.jpg">
+											<img src="maine-coon/img/hilda-4.jpg" alt="котенок Мейн-кун">
+										</a>
+										<a class="item-kitten__image _ibg" data-fslightbox="gallery-maine-coon-hilda" href="maine-coon/img/hilda-5.jpg">
+											<img src="maine-coon/img/hilda-5.jpg" alt="котенок Мейн-кун">
+										</a>
+										<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-hilda" href="maine-coon/img/hilda-6.jpg">
+											<img src="maine-coon/img/hilda-6.jpg" alt="котенок Мейн-кун">
+										</a>
+										<div class="item-kitten__content">
+											<div class="item-kitten__header">
+												<p class="item-kitten__name">Hilda</p>
+												<p class="item-kitten__option">доступна</p>
+											</div>
+
+											<div class="item-kitten__table">
+												<p class="item-kitten__label">Пол:</p>
+												<p class="item-kitten__value">девочка</p>
+
+												<p class="item-kitten__label">Помёт:</p>
+												<p class="item-kitten__value">H 28.03.2023</p>
+
+												<p class="item-kitten__label">Окрас:</p>
+												<p class="item-kitten__value">голубой <span>(MCO a)</span></p>
+											</div>
+										</div>
+									</div>
+
+									<!-- HERCULES  -->
+									<div class="kittens__item item-kitten">
+										<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-hercules" href="maine-coon/img/hercules-1.jpg">
+											<img src="maine-coon/img/hercules-1.jpg" alt="котенок Мейн-кун">
+										</a>
+										<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-hercules" href="maine-coon/img/hercules-2.jpg">
+											<img src="maine-coon/img/hercules-2.jpg" alt="котенок Мейн-кун">
+										</a>
+										<a class="item-kitten__image _ibg" data-fslightbox="gallery-maine-coon-hercules" href="maine-coon/img/hercules-3.jpg">
+											<img src="maine-coon/img/hercules-3.jpg" alt="котенок Мейн-кун">
+										</a>
+
+										<div class="item-kitten__content">
+											<div class="item-kitten__header">
+												<p class="item-kitten__name">Hercules</p>
+												<p class="item-kitten__option">в рассмотрении</p>
+											</div>
+											<div class="item-kitten__table">
+												<p class="item-kitten__label">Пол:</p>
+												<p class="item-kitten__value">мальчик</p>
+
+												<p class="item-kitten__label">Помёт:</p>
+												<p class="item-kitten__value">28.03.2023</p>
+
+												<p class="item-kitten__label">Окрас:</p>
+												<p class="item-kitten__value">чёрный дымный (MCO&nbsp;ns)</p>
+											</div>
+										</div>
+									</div>
+
+									<!-- HILDA -->
+									<div class="kittens__item item-kitten">
+										<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-hilda-2" href="maine-coon/img/hilda-1.jpg">
+											<img src="maine-coon/img/hilda-1.jpg" alt="котенок Мейн-кун">
+										</a>
+										<a class="item-kitten__image _ibg" data-fslightbox="gallery-maine-coon-hilda-2" href="maine-coon/img/hilda-2.jpg">
+											<img src="maine-coon/img/hilda-2.jpg" alt="котенок Мейн-кун">
+										</a>
+										<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-hilda-2" href="maine-coon/img/hilda-3.jpg">
+											<img src="maine-coon/img/hilda-3.jpg" alt="котенок Мейн-кун">
+										</a>
+										<div class="item-kitten__content">
+											<div class="item-kitten__header">
+												<p class="item-kitten__name">Hilda</p>
+												<p class="item-kitten__option">доступна</p>
+											</div>
+
+											<div class="item-kitten__table">
+												<p class="item-kitten__label">Пол:</p>
+												<p class="item-kitten__value">девочка</p>
+
+												<p class="item-kitten__label">Помёт:</p>
+												<p class="item-kitten__value">H 28.03.2023</p>
+
+												<p class="item-kitten__label">Окрас:</p>
+												<p class="item-kitten__value">голубой <span>(MCO a)</span></p>
+											</div>
+										</div>
+									</div>
+
+									<!-- marble -->
+									<div class="kittens__item item-kitten">
+										<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-marble" href="maine-coon/img/marble-1.jpg">
+											<img src="maine-coon/img/marble-1.jpg" alt="котенок Мейн-кун">
+										</a>
+										<a class="item-kitten__image _ibg" data-fslightbox="gallery-maine-coon-marble" href="maine-coon/img/marble-2.jpg">
+											<img src="maine-coon/img/marble-2.jpg" alt="котенок Мейн-кун">
+										</a>
+										<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-marble" href="maine-coon/img/marble-3.jpg">
+											<img src="maine-coon/img/marble-3.jpg" alt="котенок Мейн-кун">
+										</a>
+
+										<div class="item-kitten__content">
+											<div class="item-kitten__header">
+												<p class="item-kitten__name">name</p>
+												<p class="item-kitten__option">доступна</p>
+											</div>
+
+											<div class="item-kitten__table">
+												<p class="item-kitten__label">Пол:</p>
+												<p class="item-kitten__value">девочка</p>
+
+												<p class="item-kitten__label">Помёт:</p>
+												<p class="item-kitten__value">H 10.04.2023</p>
+
+												<p class="item-kitten__label">Окрас:</p>
+												<p class="item-kitten__value">черный мраморный <span>(MCO n22)</span></p>
+											</div>
+										</div>
+									</div>
+
+									<!-- multicolor -->
+									<div class="kittens__item item-kitten">
+										<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-multicolor" href="maine-coon/img/multicolor-1.jpg">
+											<img src="maine-coon/img/multicolor-3.jpg" alt="котенок Мейн-кун">
+										</a>
+										<a class="item-kitten__image _ibg" data-fslightbox="gallery-maine-coon-multicolor" href="maine-coon/img/multicolor-2.jpg">
+											<img src="maine-coon/img/multicolor-2.jpg" alt="котенок Мейн-кун">
+										</a>
+										<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-multicolor" href="maine-coon/img/multicolor-3.jpg">
+											<img src="maine-coon/img/multicolor-3.jpg" alt="котенок Мейн-кун">
+										</a>
+
+										<div class="item-kitten__content">
+											<div class="item-kitten__header">
+												<p class="item-kitten__name">name</p>
+												<p class="item-kitten__option">доступна</p>
+											</div>
+
+											<div class="item-kitten__table">
+												<p class="item-kitten__label">Пол:</p>
+												<p class="item-kitten__value">девочка</p>
+
+												<p class="item-kitten__label">Помёт:</p>
+												<p class="item-kitten__value">H 10.04.2023</p>
+
+												<p class="item-kitten__label">Окрас:</p>
+												<p class="item-kitten__value">мраморный <span>(MCO n22)</span></p>
+											</div>
+										</div>
+									</div>
+
+									<!-- HILLARY-2 -->
+									<div class="kittens__item item-kitten">
+										<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-hillary-2" href="maine-coon/img/hillary-5.jpg">
+											<img src="maine-coon/img/hillary-5.jpg" alt="котенок Мейн-кун">
+										</a>
+										<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-hillary-2" href="maine-coon/img/hillary-6.jpg">
+											<img src="maine-coon/img/hillary-6.jpg" alt="котенок Мейн-кун">
+										</a>
+										<a class="item-kitten__image _ibg" data-fslightbox="gallery-maine-coon-hillary-2" href="maine-coon/img/hillary-7.jpg">
+											<img src="maine-coon/img/hillary-7.jpg" alt="котенок Мейн-кун">
+										</a>
+										<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-hillary-2" href="maine-coon/img/hillary-8.jpg">
+											<img src="maine-coon/img/hillary-8.jpg" alt="котенок Мейн-кун">
+										</a>
+										<div class="item-kitten__content">
+											<div class="item-kitten__header">
+												<p class="item-kitten__name">Hillary</p>
+												<p class="item-kitten__option">доступна</p>
+											</div>
+											<div class="item-kitten__table">
+												<p class="item-kitten__label">Пол:</p>
+												<p class="item-kitten__value">девочка</p>
+
+												<p class="item-kitten__label">Помёт:</p>
+												<p class="item-kitten__value">H 28.03.2023</p>
+
+												<p class="item-kitten__label">Окрас:</p>
+												<p class="item-kitten__value">чёрный дымный <span>(MCO ns)</span></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="spoilers__item">
+							<button class="spoilers__title" data-spoiler type="button" tabindex="-1">фото в возрасте 3 месяцев</button>
+							<!--  tabindex="-1" - возможность перехода при помощи Tab -->
+							<div class="spoilers__body">
+								<!-- HILLARY -->
+								<div class="spoilers__kitten item-kitten">
+									<a class="item-kitten__image _ibg" data-fslightbox="gallery-maine-coon-hillary" href="maine-coon/img/hillary-2.jpg">
+										<img src="maine-coon/img/hillary-2.jpg" alt="котенок Мейн-кун">
+									</a>
+									<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-hillary" href="maine-coon/img/hillary-3.jpg">
+										<img src="maine-coon/img/hillary-3.jpg" alt="котенок Мейн-кун">
+									</a>
+									<a class="item-kitten__image _ibg _hidden" data-fslightbox="gallery-maine-coon-hillary" href="maine-coon/img/hillary-4.jpg">
+										<img src="maine-coon/img/hillary-4.jpg" alt="котенок Мейн-кун">
+									</a>
+									<div class="item-kitten__content">
+										<div class="item-kitten__header">
+											<p class="item-kitten__name">Hillary</p>
+											<p class="item-kitten__option">доступна</p>
+										</div>
+										<div class="item-kitten__table">
+											<p class="item-kitten__label">Пол:</p>
+											<p class="item-kitten__value">девочка</p>
+
+											<p class="item-kitten__label">Помёт:</p>
+											<p class="item-kitten__value">H 28.03.2023</p>
+
+											<p class="item-kitten__label">Окрас:</p>
+											<p class="item-kitten__value">чёрный дымный <span>(MCO ns)</span></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="spoilers__item">
+							<button class="spoilers__title" data-spoiler type="button">Помёт I 16.10.2022</button>
+							<div class="spoilers__body">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias excepturi amet molestiae sunt est saepe quidem nobis vel quaerat! Voluptatum
+								molestiae nulla minima velit exercitationem saepe distinctio obcaecati totam enim!
+							</div>
+						</div>
+					</div>
+					<!-- /kittens maine-coon images spoiler -->
+					<!-- <div class="spoilers" data-spoilers="600,max">
+						<div class="spoilers">
+							<div class="spoilers__item">
+								<button class="spoilers__title" data-spoiler type="button">Помёт Y 675688</button>
+								<div class="spoilers__body">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias excepturi amet molestiae sunt est saepe quidem nobis vel quaerat! Voluptatum
+									molestiae nulla minima velit exercitationem saepe distinctio obcaecati totam enim!
+								</div>
+							</div>
+							<div class="spoilers__item">
+								<button class="spoilers__title" data-spoiler type="button">Помёт I 16.10.2022</button>
+								<div class="spoilers__body">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias excepturi amet molestiae sunt est saepe quidem nobis vel quaerat! Voluptatum
+									molestiae nulla minima velit exercitationem saepe distinctio obcaecati totam enim!
+								</div>
+							</div>
+						</div>
+
+					</div> -->
+			</section>
+			<!-- /kittens mainecoon spoilers -->
+
+			<!-- BREED ABYSSINIAN -->
+			<section class="page__breed breed" id="breed-abyssinian">
+				<div class="breed__container">
+					<article class="breed__article article-breed">
+						<div class="article-breed__image article-breed__image_abyssinian _ibg">
+							<img src="abyssinian/img/10.jpg" alt="Кошка абиссинской породы">
+						</div>
+						<div class="article-breed__content">
+							<div class="article-breed__label label">Абиссинская порода</div>
+							<h2 class="article-breed__title title">Изящество и грация</h2>
+							<div class="article-breed__text">
+								<p>
+									Абиссинская кошка&nbsp;&mdash; это воплощение изысканной элегантности и&nbsp;природной грации. Ее&nbsp;тонкое, грациозное тело, словно создано для движения.
+								</p>
+
+								<p>
+									Шерсть Абиссинской кошки удивительно мягкая и&nbsp;шелковистая, словно бархат. Ее&nbsp;лапы изящны и&nbsp;легки, а&nbsp;хвост&nbsp;&mdash; длинный и&nbsp;изогнутый,
+									он&nbsp;всегда в&nbsp;движении.
+								</p>
+
+								<p>
+									Эти кошки обладают невероятной ловкостью и&nbsp;мастерством в&nbsp;игре. Их&nbsp;интеллект и&nbsp;любопытство позволяют им&nbsp;быстро осваивать новые навыки
+									и&nbsp;развивать свой&nbsp;ум, выполнять различные команды и&nbsp;трюки.
+								</p>
+
+								<p>
+									Абиссинские кошки прекрасные компаньоны. Они привязываются к&nbsp;своим хозяевам и&nbsp;искренне наслаждаются обществом человека. Ласковые и&nbsp;заботливые, они готовы
+									подарить свою нежность и&nbsp;верность в&nbsp;ответ на&nbsp;вашу заботы.
+								</p>
+							</div>
+							<a class="article-breed__link button" href="">
+								Любовь с&nbsp;первого взгляда</span>
+							</a>
+						</div>
+					</article>
+				</div>
+			</section>
+			<!-- /breeds abyssinian -->
+
+			<!-- KITTENS ABYSSINIAN -->
+			<section class="page__kittens kittens" id="kittens-abyssinian">
+				<div class="kittens__container">
+					<div class="kittens__label label">Котята</div>
+					<h3 class="kittens__title title">Наши котята <span>Абиссинской кошки</span></h3>
+					<div class="kittens__content">
+						<div class="kittens__text">
+							<p>
+								Перелистните каталог наших котят и&nbsp;найдите своего идеального друга.
+							</p>
+							<p>
+								Доступно предварительное бронирование.
+							</p>
+						</div>
+						<!-- SOCIAL -->
+						<div class="kittens__social social">
+							<!-- <a class="social__link social__link_fb" href="https://www.facebook.com/profile.php?id=100083832633960" target="_blank">
+								<img src="icons/social/facebook-f.svg" alt="facebook иконка">
+							</a> -->
+							<a class="social__link" href="https://www.instagram.com/abyssinians_alices_boutique/" target="_blank">
+								<img src="icons/social/instagram.svg" alt="instagram иконка">
+							</a>
+							<a class="social__link" href="https://www.tiktok.com/@annairbe12" target="_blank">
+								<img src="icons/social/tiktok.svg" alt="tiktok иконка">
+							</a>
+							<!-- </div> -->
+						</div>
+						<!-- /social -->
+					</div>
+
+					<!-- KITTENS ABYSSINIAN IMAGES -->
+					<div class="kittens__images">
+						<!-- 1 -->
+						<div class="kittens__item item-kitten">
+							<a class="item-kitten__image _ibg" data-fslightbox="gallery-abyssinians" href="abyssinian/img/02.jpg">
+								<img src="abyssinian/img/02.jpg" alt="котенок Абиссинской породы">
+							</a>
+
+							<div class="item-kitten__content">
+								<div class="item-kitten__header">
+									<p class="item-kitten__name">name</p>
+									<p class="item-kitten__option">в рассмотрении</p>
+								</div>
+								<div class="item-kitten__table">
+									<p class="item-kitten__label">Пол:</p>
+									<p class="item-kitten__value">мальчик</p>
+
+									<p class="item-kitten__label">Помёт:</p>
+									<p class="item-kitten__value">16.10.2019</p>
+
+									<p class="item-kitten__label">Окрас:</p>
+									<p class="item-kitten__value">соррель</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- 2 -->
+						<div class="kittens__item item-kitten">
+							<a class="item-kitten__image _ibg" data-fslightbox="gallery-abyssinians" href="abyssinian/img/03.jpg">
+								<img src="abyssinian/img/03.jpg" alt="котенок Абиссинской породы">
+							</a>
+							<div class="item-kitten__content">
+								<div class="item-kitten__header">
+									<p class="item-kitten__name">Name</p>
+									<p class="item-kitten__option">зарезервирована</p>
+								</div>
+
+								<div class="item-kitten__table">
+									<p class="item-kitten__label">Пол:</p>
+									<p class="item-kitten__value">девочка</p>
+
+									<p class="item-kitten__label">Помёт:</p>
+									<p class="item-kitten__value">16.10.2022</p>
+
+									<p class="item-kitten__label">Окрас:</p>
+									<p class="item-kitten__value">голубой</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- 3 -->
+						<div class="kittens__item item-kitten">
+							<a class="item-kitten__image _ibg" data-fslightbox="gallery-abyssinians" href="abyssinian/img/04.jpg">
+								<img src="abyssinian/img/04.jpg" alt="котенок Абиссинской породы">
+							</a>
+							<div class="item-kitten__content">
+								<div class="item-kitten__header">
+									<p class="item-kitten__name">name</p>
+									<p class="item-kitten__option">доступна</p>
+								</div>
+								<div class="item-kitten__table">
+									<p class="item-kitten__label">Пол:</p>
+									<p class="item-kitten__value">девочка</p>
+
+									<p class="item-kitten__label">Помёт:</p>
+									<p class="item-kitten__value">H 16.04.2023</p>
+
+									<p class="item-kitten__label">Окрас:</p>
+									<p class="item-kitten__value">фавн</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- 4 -->
+						<div class="kittens__item item-kitten">
+							<a class="item-kitten__image _ibg" data-fslightbox="gallery-abyssinians" href="abyssinian/img/07.jpg">
+								<img src="abyssinian/img/07.jpg" alt="котенок Абиссинской породы">
+							</a>
+							<div class="item-kitten__content">
+								<div class="item-kitten__header">
+									<p class="item-kitten__name">name</p>
+									<p class="item-kitten__option">доступен</p>
+								</div>
+								<div class="item-kitten__table">
+									<p class="item-kitten__label">Пол:</p>
+									<p class="item-kitten__value">мальчик</p>
+
+									<p class="item-kitten__label">Помёт:</p>
+									<p class="item-kitten__value">I 16.10.2023</p>
+
+									<p class="item-kitten__label">Окрас:</p>
+									<p class="item-kitten__value">дикий</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- 5 -->
+						<div class="kittens__item item-kitten">
+							<a class="item-kitten__image _ibg" data-fslightbox="gallery-abyssinians" href="abyssinian/img/11.jpg">
+								<img src="abyssinian/img/11.jpg" alt="котенок Абиссинской породы">
+								<!-- <span class="item-kitten__overlay">Продан</span> -->
+							</a>
+							<div class="item-kitten__content">
+								<div class="item-kitten__header">
+									<p class="item-kitten__name">name</p>
+									<p class="item-kitten__option">продан</p>
+								</div>
+								<div class="item-kitten__table">
+
+									<p class="item-kitten__label">Пол:</p>
+									<p class="item-kitten__value">мальчик</p>
+
+									<p class="item-kitten__label">Помёт:</p>
+									<p class="item-kitten__value">16.10.2019</p>
+
+									<p class="item-kitten__label">Окрас:</p>
+									<p class="item-kitten__value">дикий</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- /kittens abyssinian images -->
+
+				</div>
+			</section>
+			<!-- /kittens abyssinian -->
+
+
+		</main>
+		<!-- /main-page -->
+		<!-- FOOTER -->
+		<footer class="footer">
+			<div class="footer__main main-footer">
+				<div class="main-footer__container">
+
+					<div class="main-footer__header">
+						<!-- LOGO -->
+						<a class="main-footer__logo logo" data-goto="#home" href="#home">
+							<div class="logo__img _ibg">
+								<img src="icons/logo/cat.svg" alt="кот иконка">
+							</div>
+							<p class="logo__desc">
+								<span class="logo__title">Alice's Boutique
+								</span>
+								<span class="logo__text">pets raised with love
+									<img class="logo__icon" src="icons/logo/heart.svg" alt="сердце иконка">
+								</span>
+							</p>
+						</a>
+						<!-- /logo -->
+						<div class="main-footer__text">
+							<p>Если у&nbsp;Вас возник интерес в&nbsp;приобретении котенка&nbsp;&mdash; свяжитесь с&nbsp;нами уже сегодня, чтобы обсудить детали.</p>
+							<p>Ваши мечты находятся всего в&nbsp;одном сообщении или звонке от&nbsp;воплощения в&nbsp;жизнь.</p>
+							<!-- <p>Давайте начнем это невероятное путешествие вместе!</p> -->
+						</div>
+					</div>
+					<div class="main-footer__info info-main-footer">
+
+						<div class="info-main-footer__menu info-main-footer__contact-info">
+							<h5 class="info-main-footer__title">Контактная информация</h5>
+							<ul class="info-main-footer__list">
+								<li class="info-main-footer__item">
+									<a class="info-main-footer__link" href="tel:0037127485880" target="_blank">
+										<div class="info-main-footer__icon contact-icon">
+											<svg>
+												<use xlink:href="icons/icons.svg#phone"></use>
+											</svg>
+										</div>
+										<div class="info-main-footer__contact">
+											<span class="info-main-footer__sub-title">Телефон:</span>
+											<span class="info-main-footer__text">(+371) 27-485-880</span>
+										</div>
+									</a>
+								</li>
+
+								<li class="info-main-footer__item">
+									<a class="info-main-footer__link" href="mailto:info@example.com" target="_blank">
+										<div class="info-main-footer__icon contact-icon">
+											<svg>
+												<use xlink:href="icons/icons.svg#envelope"></use>
+											</svg>
+										</div>
+										<div class="info-main-footer__contact">
+											<span class="info-main-footer__sub-title">Электронная почта:</span>
+											<span class="info-main-footer__text">info@example.com</span>
+										</div>
+									</a>
+								</li>
+
+								<li class="info-main-footer__item">
+									<a class="info-main-footer__link" href="https://www.google.com/maps?q=Tukums,+Latvia" target="_blank">
+										<!-- <a class="info-main-footer__link" href="https://maps.app.goo.gl/CVt5PKK98aEiioLR6" target="_blank">Тукумс, Латвия</a> -->
+										<!-- https://www.google.com/maps?q=123+Main+Street,+City,+Country -->
+										<div class="info-main-footer__icon contact-icon">
+											<svg>
+												<use xlink:href="icons/icons.svg#location"></use>
+											</svg>
+										</div>
+										<div class="info-main-footer__contact">
+											<span class="info-main-footer__sub-title">Адрес:</span>
+											<span class="info-main-footer__text">Тукумс, Латвия</span>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="info-main-footer__menu info-main-footer__messengers">
+							<h5 class="info-main-footer__title">Мессенджеры</h5>
+
+							<ul class="info-main-footer__list">
+								<li class="info-main-footer__item">
+									<a class="info-main-footer__link" href="https://wa.me/37127485880" target="_blank">
+										<span class="info-main-footer__icon social-icon social-icon_whats-app">
+											<svg>
+												<use xlink:href="icons/icons.svg#whats-app"></use>
+											</svg>
+										</span>
+										<span class="info-main-footer__text">WhatsApp</span>
+									</a>
+								</li>
+								<li class="info-main-footer__item">
+									<a class="info-main-footer__link" href="https://t.me/your_telegram_username" target="_blank">
+										<span class="info-main-footer__icon social-icon social-icon_telegram">
+											<svg>
+												<use xlink:href="icons/icons.svg#telegram"></use>
+											</svg>
+										</span>
+										<span class="info-main-footer__text">Telegram</span>
+									</a>
+								</li>
+								<li class="info-main-footer__item">
+									<a class="info-main-footer__link" href="https://m.me/100083832633960" target="_blank">
+										<span class="info-main-footer__icon social-icon social-icon_facebook-mes">
+											<svg>
+												<use xlink:href="icons/icons.svg#facebook-mes"></use>
+											</svg>
+										</span>
+										<span class="info-main-footer__text">Messenger</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="info-main-footer__menu info-main-footer__social-media">
+							<h5 class="info-main-footer__title">Социальные сети</h5>
+							<!-- <h5 class="info-main-footer__title">Мы в соцсетях - Сообщество</h5> -->
+							<ul class="info-main-footer__list">
+
+								<li class="info-main-footer__item">
+									<a class="info-main-footer__link" href="https://www.facebook.com/profile.php?id=100083832633960" target="_blank">
+										<span class="info-main-footer__icon social-icon social-icon_facebook-f">
+											<svg>
+												<use xlink:href="icons/icons.svg#facebook-f"></use>
+											</svg>
+										</span>
+										<span class="info-main-footer__text">Facebook</span>
+									</a>
+								</li>
+								<li class="info-main-footer__item">
+									<a class="info-main-footer__link" href="https://www.tiktok.com/@annairbe12" target="_blank">
+										<span class="info-main-footer__icon social-icon social-icon_tik-tok">
+											<svg>
+												<use xlink:href="icons/icons.svg#tik-tok"></use>
+											</svg>
+										</span>
+										<span class="info-main-footer__text">TikTok</span>
+									</a>
+								</li>
+								<li class="info-main-footer__item">
+									<a class="info-main-footer__link" href="https://www.instagram.com/mainecoon_alices_boutique/" target="_blank">
+										<span class="info-main-footer__icon social-icon social-icon_instagram">
+											<svg>
+												<use xlink:href="icons/icons.svg#instagram"></use>
+											</svg>
+										</span>
+										<span class="info-main-footer__text">Instagram</span>
+									</a>
+									<span class="info-main-footer__arrow arrow"></span>
+
+									<nav class="info-main-footer__sub-menu sub-menu">
+										<ul class="info-main-footer__sub-menu sub-menu__list">
+											<li class="sub-menu__item">
+												<a class="sub-menu__link" href="https://www.instagram.com/abyssinians_alices_boutique/" target="_blank">
+													<span class="sub-menu__icon social-icon social-icon_instagram">
+														<svg>
+															<use xlink:href="icons/icons.svg#instagram"></use>
+														</svg>
+													</span>
+													<span class="sub-menu__text">_abyssinians</span>
+												</a>
+											</li>
+											<li class="sub-menu__item">
+												<a class="sub-menu__link" href="https://www.instagram.com/alices_boutique_sphinx/" target="_blank">
+													<span class="sub-menu__icon social-icon social-icon_instagram">
+														<svg>
+															<use xlink:href="icons/icons.svg#instagram"></use>
+														</svg>
+													</span>
+													<span class="sub-menu__text">_sphinx</span>
+												</a>
+											</li>
+										</ul>
+									</nav>
+								</li>
+
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="footer__bottom">
+				<p>&copy; 2023. Все права защищены.</p>
+				<!-- All rights reserved. -->
+				<!-- Visas tiesības aizsargātas.. -->
+			</div>
+		</footer>
+		<!-- /footer -->
+		<!-- <a class="button" href="">Любовь с первого взгляда</a>
+						<a class="button">Найдите своего идеального пушистого&nbsp;друга</a> -->
+	</div>
+	<script src="js/fslightbox.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
