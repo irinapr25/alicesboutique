@@ -607,8 +607,11 @@ body {
 }
 /* LOGO */
 .logo {
-  display: grid;
-  grid-template-columns: 23.2835820896% auto;
+  /* display: grid;
+  grid-template-columns: percent(78, 335) 1fr; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-left: -0.1875rem;
   position: relative;
   z-index: 5;
@@ -634,20 +637,13 @@ body {
             column-gap: 0.25rem;
   }
 }
-@media (min-width: 81.875em) {
-  .logo {
-    padding-right: 4rem;
-  }
+.logo__img {
+  display: block;
+  padding-bottom: 23.2835820896%;
+  width: 300px;
 }
-@media (min-width: 20em) and (max-width: 81.875em) {
-  .logo {
-    padding-right: clamp( 2.25rem , 1.6843434343rem + 2.8282828283vw , 4rem );
-  }
-}
-@media (max-width: 20em) {
-  .logo {
-    padding-right: 2.25rem;
-  }
+.logo__img img {
+  max-width: 100%;
 }
 .logo__desc {
   display: grid;
