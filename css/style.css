@@ -608,7 +608,7 @@ body {
 /* LOGO */
 .logo {
   display: grid;
-  grid-template-columns: 21.56133829% 1fr;
+  grid-template-columns: 23.2835820896% 1fr;
   margin-left: -0.1875rem;
   position: relative;
   z-index: 5;
@@ -634,24 +634,20 @@ body {
             column-gap: 0.25rem;
   }
 }
-.logo__img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  max-width: 3.625rem;
-  max-height: 3.625rem;
-  -ms-flex-item-align: center;
-      align-self: center;
+@media (min-width: 81.875em) {
+  .logo {
+    padding-right: 4rem;
+  }
 }
-.logo__img svg {
-  width: 100%;
-  fill: currentColor;
+@media (min-width: 20em) and (max-width: 81.875em) {
+  .logo {
+    padding-right: clamp( 2.25rem , 1.6843434343rem + 2.8282828283vw , 4rem );
+  }
+}
+@media (max-width: 20em) {
+  .logo {
+    padding-right: 2.25rem;
+  }
 }
 .logo__desc {
   display: grid;
