@@ -319,7 +319,7 @@ langButton.addEventListener('click', function (e) {
 	});
 
 	// Перенаправление при загрузке страницы с учетом выбранного языка
-	redirectWithLang(selectedLang);
+	//redirectWithLang(selectedLang);
 
 	//=======================================================
 
