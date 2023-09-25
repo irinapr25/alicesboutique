@@ -1,0 +1,140 @@
+/* max-width: 991.98px */
+@media (max-width: 61.9988em) {
+	.header__container {
+		column-gap: 1.875rem;
+		min-height: 5.625rem;
+	}
+
+	.logo {
+		gap: .4375rem;
+	}
+	.logo__title {
+		font-size: 42px;
+	}
+	.logo__img {
+		/* flex: 0 0 3.75rem; */
+	}
+	.menu__list {
+		column-gap: 1.5625rem;
+	}
+}
+
+/* max-width: 767.98px */
+@media (max-width: 47.9988em) {
+	.header__container {
+		min-height: 5rem;
+		gap: 10px;
+	}
+	.logo {
+		gap: .3125rem;
+	}
+	.logo__title {
+		font-size: 38px;
+	}
+	.logo__text {
+		font-size: 14px;
+	}
+	.logo__img {
+		/* max-width: 3.5rem; */
+		/* flex: 0 0 3.3125rem; */
+	}
+
+	.lang__link img {
+		width: 1.75rem;
+		margin-right: 18px;
+	}
+
+	/* BURGER */
+	.icon-menu {
+		display: block;
+		position: relative;
+		flex: 0 0 1.875rem;
+		/* width: 30px; */
+		height: 1.125rem;
+		cursor: pointer;
+		z-index: 5;
+	}
+	.icon-menu span,
+	.icon-menu::before,
+	.icon-menu::after {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: .1875rem;
+		background-color: var(--main-color);
+		border-radius: .125rem;
+	}
+	.icon-menu span {
+		top: 50%;
+		transition: all 0.3s linear 0.3s;
+	}
+	.icon-menu::before,
+	.icon-menu::after {
+		content: '';
+		top: 0;
+		transition: top 0.3s linear 0.3s, transform 0.3s linear 0s;
+		/* transition-property: top, transform;
+		transition-timing-function: linear;
+		transition-duration: 0.3s, 0.3s;
+		transition-delay: 0.3s, 0s; */
+	}
+	.icon-menu::after {
+		top: 100%;
+	}
+
+	.menu-open .icon-menu span {
+		transition-delay: 0.1s;
+		background-color: transparent;
+	}
+	.menu-open .icon-menu::before,
+	.menu-open .icon-menu::after {
+		top: 50%;
+		/* transition: top 0.3s linear 0s, transform 0.3s linear 0.3s; */
+		transition-delay: 0s, 0.3s;
+	}
+	.menu-open .icon-menu::before {
+		transform: rotate(45deg);
+	}
+	.menu-open .icon-menu::after {
+		transform: rotate(-45deg);
+	}
+
+	.menu__body {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background-color: var(--block-background-color);
+		left: 0;
+		top: 0;
+		padding-top: 5.3125rem;
+		padding-left: 20px;
+		padding-right: 18px;
+		padding-bottom: 30px;
+
+	}
+	.menu__list {
+		flex-direction: column;
+		align-items: flex-end;
+		row-gap: .5em;
+	}
+	.menu__link {
+		font-size: 1.75rem;
+		display: block;
+	}
+}
+
+/* max-width: 424.98px */
+@media (max-width: 26.5613em) {
+	.header__container {
+		min-height: 4.375rem;
+	}
+
+	.logo__img {
+		flex: 0 0 3.5rem;
+		padding-bottom: 3.5rem;
+	}
+	.logo__desc {
+		/* visibility: hidden; */
+		display: none;
+	}
+}

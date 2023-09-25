@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="lv">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Alice's boutique - животные выращенные с любовью</title>
+
+	<!-- <meta name="description" content="Мейн-кун, Абиссинская порода, Канадский сфинкс - WCF питомник LV"> -->
+	<meta name="description" content="WCF Сертифицированный питомник Мейн-кун, Абиссинская порода, Канадский сфинкс">
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;600&family=Dancing+Script:wght@600;700&family=Lato&family=Montserrat&family=Open+Sans:wght@300;400;500;700&family=Poppins:wght@300;400;500;700&family=Roboto&family=Source+Sans+3:wght@400;600;700;900&family=Tangerine:wght@400;700&family=Ubuntu&Oswald:wght@600&family=Playfair+Display:wght@600&Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap"
+		rel="stylesheet">
+
+	<!-- <link rel="stylesheet" href="css/reset.css"> -->
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- HEADER -->
+		<header class="header">
+			<div class="header__container">
+				<!-- LOGO -->
+				<a class="header__logo logo" data-goto="#home" href="#home">
+					<div class="logo__img _ibg">
+						<img src="icons/logo/cat.svg" alt="кот иконка">
+					</div>
+					<p class="logo__desc">
+						<span class="logo__title">Alice's Boutique
+							<!-- <img class="logo__icon" src="icons/heart.svg" alt="сердце иконка"> -->
+						</span>
+						<span class="logo__text">pets raised with love
+							<img class="logo__icon" src="icons/logo/heart.svg" alt="сердце иконка">
+						</span>
+					</p>
+				</a>
+				<!-- /logo -->
+
+				<!-- MENU-NAV -->
+				<nav class="header__menu menu">
+					<div class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a class="menu__link _active" data-goto="#home" href="#home"><span>Главная</span></a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" data-goto="#about" href="#about"><span>О&nbsp;нас</span></a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" data-goto="#breed" href="#breed"><span>Породы</span></a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" data-goto="#contact" href="#contact"><span>Контакты</span></a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<!-- /menu-nav -->
+
+				<!-- LANGUAGE -->
+				<div class="header__lang lang">
+					<button class="lang__button">
+						<img src="icons/other/globe-solid.svg" alt="глобус иконка">
+					</button>
+					<ul class="lang__list">
+						<li class="lang__item">
+							<a class="lang__link" data-lang="ru" href="#">RU</a>
+						</li>
+						<li class="lang__item">
+							<a class="lang__link" data-lang="en" href="#">EN</a>
+						</li>
+						<li class="lang__item">
+							<a class="lang__link" data-lang="lv" href="#">LV</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /language -->
+
+				<!-- BURGER -->
+				<button class="icon-menu" type="button">
+					<span></span>
+				</button>
+				<!-- /burger -->
+			</div>
+		</header>
+		<!-- /header -->
+
+		<!-- MAIN-PAGE -->
+		<main class="page">
+			<!-- MAIN -->
+			<section class="page__main main" id="home">
+				<div class="main__container">
+					<!-- MAIN CONTENT-TEXT -->
+					<div class="main__content">
+						<h1 class="main__title">
+							Воплощение нежности и&nbsp;великолепия в&nbsp;каждом котенке!
+						</h1>
+						<div class="main__text">
+							<p>Добро пожаловать в&nbsp;наш уютный кошачий питомник!</p>
+							<p>Откройте двери в&nbsp;мир прекрасных мурчащих друзей.</p>
+						</div>
+						<!-- <a class="main__link button" href="">породистые котята ждут вас!</a> -->
+						<a class="main__link button" href="#breed" data-goto="#breed">Ваше счастье начинается здесь</a>
+					</div>
+
+					<!-- MAIN IMAGES -->
+					<div class="main__images images-main">
+						<a class="images-main__item images-main__item_1 _ibg" href="#breed-maine-coon" data-goto="#breed">
+							<img src="img/maine-coon/10.jpg" alt="мейн кун котенок фото">
+							<!-- <img src="images/3Ir164aDGjNWSU9L3JDO--1--l7vl7.jpg" alt="мейн кун котенок фото"> -->
+							<span class="images-main__overlay">Мейн кун</span>
+						</a>
+						<a class="images-main__item images-main__item_2 _ibg" href="#">
+							<img src="img/abyssinians/10.jpg" alt="котенок абиссинской породы фото">
+							<span class="images-main__overlay">Абиссинская порода</span>
+						</a>
+						<a class="images-main__item images-main__item_3 _ibg" href="#">
+							<img src="img/sphinx/01.jpg" alt="канадский сфинкс котенок фото">
+							<span class="images-main__overlay">Канадский сфинкс</span>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- ABOUT US -->
+			<section class="page__about about" id="about">
+				<div class="about__container">
+					<!-- <div class="about__body"> -->
+					<div class="about__images images-about">
+						<a class="images-about__item images-about__item_1 _ibg" href="#">
+							<img src="img/maine-coon/20-2.jpg" alt="мейн кун котенок фото">
+							<!-- <img src="img/div.jpg" alt="мейн кун котенок фото"> -->
+						</a>
+						<a class="images-about__item images-about__item_2 _ibg" href="#">
+							<img src="img/maine-coon/21.jpg" alt="котенок абиссинской породы фото">
+						</a>
+						<!-- <a class="images-about__item images-about__item_3 _ibg" href="#">
+								<img src="img/sphinx/01.jpg" alt="канадский сфинкс котенок фото">
+							</a> -->
+					</div>
+					<div class="about__content">
+						<!-- <h2 class="about__title">Приветствуем вас на сайте питомника <a href="#">"Alice's Boutique"</a></h2> -->
+						<div class="about__label label">О нас</div>
+						<h2 class="about__title">Несколько слов о нашем питомнике</h2>
+						<div class="about__text">
+							<p>
+								Наш&nbsp; домашний питомник, расположенный в&nbsp;Латвии, за городом, в экологически чистой зоне.
+							</p>
+							<p>
+								У&nbsp;нас вы&nbsp;найдете прекрасных котят породы <a href="">Мейн-кун</a>, <a href="">Абиссинской кошки</a> и <a href="">Канадского сфинкса</a>.
+							</p>
+							<p>
+								Наш питомник ориентирован на&nbsp;получение здоровых, красивых котят, которые полностью соответствуют установленному стандарту своей породы. Питомник официально
+								зарегистрирован в&nbsp;системе WCF.
+							</p>
+							<p>
+								Каждый котенок в&nbsp;нашем питомнике выращивается в&nbsp;атмосфере любви и&nbsp;заботы, что делает их&nbsp;идеальными компаньонами для вашей семьи.
+							</p>
+						</div>
+						<a class="about__link button" href="#breed" data-goto="#breed">Выбери своего любимца</a>
+					</div>
+				</div>
+			</section>
+			<!-- /about us -->
+
+			<!-- OFFER -->
+			<section class="page__offer offer">
+				<div class="offer__container">
+					<div class="offer__label label">Услуги</div>
+
+					<!-- <h3 class="offer__title">Услуги, которые мы&nbsp;предоставляем</h3> -->
+					<h3 class="offer__title">Выбирая нас, вы&nbsp;получаете</h3>
+					<div class="offer__items">
+						<!-- CARD -->
+						<article class="offer__item item-offer">
+							<div class="item-offer__header">
+								<div class="item-offer__icon">
+									<img src="icons/offer/hand-holding-heart-solid.svg" alt="сердце на руке иконка">
+									<!-- <img src="icons/1767856550.svg" alt="сердце на руке иконка"> -->
+								</div>
+								<h4 class="item-offer__sub-title">Любовь и&nbsp;забота</h4>
+							</div>
+							<div class="item-offer__text">
+								<p>Каждый котенок в&nbsp;нашем питомнике выращивается в&nbsp;атмосфере любви и&nbsp;заботы, что делает их&nbsp;идеальными компаньонами для вашей семьи.</p>
+								<p>Котята готовы к&nbsp;переезду в&nbsp;новый дом не&nbsp;ранее чем в&nbsp;возрасте 3,5&nbsp;месяцев, что гарантирует их&nbsp;зрелость и&nbsp;способность адаптироваться.</p>
+							</div>
+						</article>
+
+						<article class="offer__item item-offer">
+							<div class="item-offer__header">
+								<div class="item-offer__icon">
+									<img src="icons/offer/user-md-solid.svg" alt="врач иконка">
+								</div>
+								<h4 class="item-offer__sub-title">Здоровье и&nbsp;безопасность</h4>
+							</div>
+							<div class="item-offer__text">
+								<p>Все наши котята имеют необходимые вакцинации по&nbsp;возрасту и&nbsp;получают должное медицинское внимание, чтобы гарантировать их&nbsp;здоровье.</p>
+								<p>Каждый котенок имеет чип.</p>
+								<p>Они уже привыкли использовать лоток и&nbsp;когтеточку, что значительно облегчит адаптацию в&nbsp;новом доме.</p>
+							</div>
+						</article>
+
+						<article class="offer__item item-offer">
+							<div class="item-offer__header">
+								<div class="item-offer__icon">
+									<img src="icons/offer/comments-solid.svg" alt="комментарии иконка">
+								</div>
+								<h4 class="item-offer__sub-title">Консультации и&nbsp;рекомендации</h4>
+							</div>
+							<div class="item-offer__text">
+								<p>Мы&nbsp;предоставляем консультации по&nbsp;выбору корма, составлению меню, чтобы обеспечить правильное питание и&nbsp;разнообразие.</p>
+								<p>Даем рекомендации по&nbsp;выбору необходимых принадлежностей по&nbsp;уходу за&nbsp;вашим новым другом.</p>
+							</div>
+						</article>
+
+						<article class="offer__item item-offer">
+							<div class="item-offer__header">
+								<div class="item-offer__icon">
+									<img src="icons/offer/passport-solid.svg" alt="паспорт иконка">
+								</div>
+								<h4 class="item-offer__sub-title">Оформление и&nbsp;договора</h4>
+							</div>
+							<div class="item-offer__text">
+								<p>Практически любой наш котенок может быть продан как pet-class (домашний любимец) или как breed-class (с&nbsp;правом разведения).</p>
+								<p>На&nbsp;каждого нашего котенка оформляется родословная, Международный ветеринарный паспорт и&nbsp;Договор с&nbsp;покупателем.</p>
+								<p>Мы&nbsp;также оказываем поддержку в&nbsp;оформлении всех необходимых выездных документов в&nbsp;другие страны.</p>
+							</div>
+						</article>
+
+						<article class="offer__item item-offer">
+							<div class="item-offer__header">
+								<div class="item-offer__icon">
+									<img src="icons/offer/stamp-solid.svg" alt="штамп иконка">
+								</div>
+								<h4 class="item-offer__sub-title">Стандарт породы</h4>
+							</div>
+							<div class="item-offer__text">
+								<p>Мы&nbsp;придерживаемся высоких стандартов породы, чтобы наши котята соответствовали всем характерным чертам своих пород.</p>
+								<p>Только здоровые физически и&nbsp;психически кошки, тестированые на&nbsp;генетические заболевания допускаются нами в&nbsp;разведение.</p>
+								<p>Мы&nbsp;участвеум в&nbsp;выставках и&nbsp;имеем выставочные титулы.</p>
+							</div>
+						</article>
+
+						<article class="offer__item item-offer">
+							<div class="item-offer__header">
+								<div class="item-offer__icon">
+									<img src="icons/offer/paw-solid.svg" alt="лапа иконка">
+								</div>
+								<h4 class="item-offer__sub-title">Разнообразие пород и&nbsp;прозрачность</h4>
+							</div>
+							<div class="item-offer__text">
+								<p>В&nbsp;нашем питомнике представлены разные породы, позволяя вам выбрать именно&nbsp;ту, которая соответствует вашим предпочтениям.</p>
+								<p>Мы&nbsp;ценим открытость и&nbsp;прозрачность в&nbsp;отношениях с&nbsp;нашими клиентами, предоставляя всю необходимую информацию о&nbsp;котятах.</p>
+							</div>
+						</article>
+					</div>
+				</div>
+
+			</section>
+			<!-- /offer -->
+
+			<!-- BREED -->
+			<section class="page__breed breed" id="breed">
+				<div class="breed__container">
+					<article class="breed__article article-breed" id="breed-maine-coon">
+						<div class="article-breed__image _ibg">
+							<img src="img/maine-coon/11.jpg" alt="Кошка породы Мейн-кун">
+							<!-- <img src="img/div2.jpg" alt="Кошка породы Мейн-кун"> -->
+						</div>
+						<div class="article-breed__content">
+							<div class="article-breed__label label">Мейн-кун</div>
+							<h2 class="article-breed__title">Порода кошек Мейн-кун</h2>
+							<div class="article-breed__text">
+								<p>
+									Мейн-кун – это сокровище кошачьего мира, олицетворение величия и нежности в одном. Их грациозные, но мощные тела, будто созданы, чтобы быть надежной опорой для вашей души.
+									Их шерсть – настоящее произведение искусства природы, густая и шелковистая, словно пушистое облачко.
+								</p>
+
+								<p>
+									Эти кошки – настоящие хранители домашнего очага. Они приносят в дом не только свою прекрасную внешность, но и тепло своего сердца. Их дружелюбие знает границы лишь в любви,
+									которую они готовы дарить
+									безмерно. Словно умеют читать мысли, они всегда находятся рядом, когда нужна поддержка.
+								</p>
+							</div>
+							<!-- SOCIAL -->
+							<div class="article-breed__social social">
+								<h6 class="social__title">Следите за нами в социальных сетях</h6>
+								<div class="social__links">
+									<a class="social__link social__link_fb" href="https://www.facebook.com/profile.php?id=100083832633960" target="_blank">
+										<img src="icons/social/facebook-f.svg" alt="facebook иконка">
+									</a>
+									<a class="social__link" href="https://www.instagram.com/coonkitten_alices_boutique/" target="_blank">
+										<!-- <a class="social__link" href="https://www.instagram.com/abyssinians_alices_boutique/" target="_blank">
+									<a class="social__link" href="https://www.instagram.com/alices_boutique_sphinx/" target="_blank"> -->
+										<img src="icons/social/instagram.svg" alt="instagram иконка">
+									</a>
+									<a class="social__link" href="https://www.tiktok.com/@annairbe12" target="_blank">
+										<img src="icons/social/tiktok.svg" alt="tiktok иконка">
+									</a>
+								</div>
+							</div>
+							<!-- /social -->
+							<div>
+					</article>
+				</div>
+			</section>
+			<!-- breeds -->
+		</main>
+		<!-- /main-page -->
+		<!-- FOOTER -->
+		<footer class="footer">
+			<div class="footer__container">
+				FOOTER
+			</div>
+		</footer>
+		<!-- /footer -->
+	</div>
+
+	<script src="../js/script.js"></script>
+</body>
+
+</html>
