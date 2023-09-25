@@ -262,7 +262,7 @@ langButton.addEventListener('click', function (e) {
 */
 	//=======================================================
 	// <html lang="ru"> <!-- Устанавливаем язык по умолчанию как "ru" --></html>
-	/* //! язык
+	//! язык
 	const langButton = document.querySelector('.lang__button');
 	const langLinks = document.querySelectorAll('.lang__link');
 
@@ -318,7 +318,7 @@ langButton.addEventListener('click', function (e) {
 	});
 
 	// Перенаправление при загрузке страницы с учетом выбранного языка
-	redirectWithLang(selectedLang); */
+	redirectWithLang(selectedLang);
 
 	//=======================================================
 
