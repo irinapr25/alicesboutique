@@ -296,11 +296,12 @@ langButton.addEventListener('click', function (e) {
 	// Функция для перенаправления на соответствующую страницу с учетом языка
 	// ! не дает открыть index.html локально в file:///D:/Irina/Anna-MaineCoon-1/index.html
 	function redirectWithLang(lang) {
-		let newPath = lang === 'ru' ? '/' : '/' + lang + '/';
-		if (window.location.pathname !== newPath) {
-			window.location.href = newPath;
-		}
-	}
+  let newPath = lang === 'ru' ? '/index.html' : '/' + lang + '/';
+  if (window.location.pathname !== newPath) {
+    window.location.href = newPath;
+  }
+}
+
 
 	langLinks.forEach(function (link) {
 		link.addEventListener('click', function (event) {
@@ -318,7 +319,7 @@ langButton.addEventListener('click', function (e) {
 	});
 
 	// Перенаправление при загрузке страницы с учетом выбранного языка
-	//redirectWithLang(selectedLang);
+	redirectWithLang(selectedLang);
 
 	//=======================================================
 
