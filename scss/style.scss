@@ -1,0 +1,337 @@
+@use 'sass:math';
+// @import 'preloader';
+
+// Подключение миксинов ==========================================
+@import 'mixins';
+
+$fontSize: rem(16);
+
+// FONT FAMILY
+// $title-font-family: 'Cabin', sans-serif;
+// $title-font-family: 'Nunito Sans', sans-serif;
+// $title-font-family: 'Nunito', sans-serif;
+$title-font-family: Arial, Helvetica, sans-serif;
+$main-font-family: 'Open Sans', sans-serif;
+
+// TEXT COLOR
+// $main-color: #000;
+// $title-color: #111;
+// $text-color: #2a2a2a;
+// $accent-color: #ff0000;
+
+$main-color: #000;
+$title-color: #181818;
+$text-color: rgb(24, 24, 24); //#181818;
+
+$light-color: #96a783;
+$middle-color: #677857;
+$dark-color: #4b5a39;
+$accent-color: #f8312f;
+$hover-color: #fff;
+
+// $gradient-color: linear-gradient(90deg, rgba(76, 91, 58, 1) 0%, rgba(147, 163, 128, 1) 100%);
+$gradient-color: linear-gradient(90deg, #4b5a39 0%, #96a783 100%);
+$gradient-rotate-color: linear-gradient(
+	-90deg,
+	rgba(76, 91, 58, 1) 0%,
+	rgba(147, 163, 128, 1) 100%
+);
+
+// BACKGROUND COLOR
+$dark-background-color: #c6c5c1;
+$light-background-color: #e5e8e8;
+
+// НАСТРОЙКИ ==========================================
+// Минимальная ширина страницы
+$minWidth: 320;
+// Ширина полотна (макета)
+$maxWidth: 1510;
+// Ширина ограничивающего контейнера (0 = нет ограничения)
+$maxWidthContainer: 1280;
+// Общий отступ у контейнера
+// (30 = по 15px слева и справа, 0 = нет отступа)
+$containerPadding: 30;
+
+// Тип адаптива:
+// 1 = отзывчивость (у контейнера нет брейкпоинтов),
+// 2 = по брейк-поинтам (контейнер меняет свою ширину по брейк-поинтам)
+$responsiveType: 1;
+
+// Ширина срабатывания первого брейкпоинта
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// Брейк-поинты
+// ширина container+2*padding
+$pc: em($containerWidth);
+// laptop L
+$laptop: em(1039.98);
+// laptop - ПК, ноутбуки, некоторые планшеты в горизонтальном положении
+$laptop: em(1023.98);
+// Планшеты
+$pcTablet: em(991.98);
+$tablet: em(767.98);
+
+$tabletMobile: em(575.98);
+// Телефоны L
+$mobileL: em(424.98);
+// Телефоны M
+$mobileM: em(374.98);
+// Телефоны S
+$mobileS: em(319.98);
+
+/* NULL STYLES */
+@import 'null';
+
+//=======================================================
+html {
+	// плавный scroll не учитывает высоту шапки-fixed
+	scroll-behavior: smooth;
+
+	// чтобы не скакал контент, когда открывается menu__body, если есть полоса прокрутки - плохая поддержка
+	// scrollbar-gutter: stable;
+}
+body {
+	font-family: $main-font-family;
+	font-size: $fontSize;
+	font-style: normal;
+	line-height: 1;
+	color: $text-color;
+	background-color: $light-background-color;
+
+	// ? чтобы нельзя было выделить текст
+	// user-select: none;
+
+	// body.menu-open
+	// блокируем прокрутку экрана, когда открыто выпадающее меню - body class="menu-open"
+	&.menu-open {
+		overflow: hidden;
+		touch-action: none;
+	}
+
+	// Сайт загружен
+	.loaded & {
+	}
+}
+
+/* SCROLLBAR */
+html {
+	// Firefox полоса прокрутки и новые версии Chrome, Microsoft Edge
+	// scrollbar-color: $text-color $dark-background-color;
+	// scrollbar-color: $text-color transparent;
+	// scrollbar-color: $light-background-color $dark-background-color;
+	scrollbar-color: $text-color $dark-background-color;
+	// Изменение ширины полосы прокрутки можно использовать thin, auto или другие значения
+	scrollbar-width: thin;
+
+	// Google Chrome, Safari, Microsoft Edge
+	// Изменение цвета фона полосы прокрутки
+	::-webkit-scrollbar {
+		background-color: $dark-background-color;
+	}
+	// Изменение цвета полосы прокрутки
+	::-webkit-scrollbar-thumb {
+		background-color: $light-background-color;
+		// border-radius: 100vw;
+		// border: 3px solid orange; // отступ вокруг бегунка
+	}
+	// Изменение размера полосы прокрутки
+	::-webkit-scrollbar {
+		// width: 12px;
+		// border: 1px solid $light-background-color;
+		width: 0.55rem;
+	}
+	// Изменение стилей треугольников по умолчанию в полосе прокрутки
+	::-webkit-scrollbar-button {
+		// background-color: #fff;
+		// display: block;
+	}
+
+	// Изменение цвета фона (track) полосы прокрутки
+	::-webkit-scrollbar-track {
+		// background-color: red;
+	}
+}
+
+//=======================================================
+/* SELECTION - Цвет фона при выделении текста */
+::selection {
+	// background-color: #768765;
+	// background-color: #728160;
+	// background-color: $green-middle-color;
+	background-color: rgba($text-color, 1);
+	color: #fff;
+}
+
+::-moz-selection {
+	background-color: $text-color;
+	color: #fff;
+}
+
+//=======================================================
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	overflow: clip;
+	min-height: 100%;
+	// Прижимаем footer книзу
+	> main {
+		flex: 1 1 auto;
+	}
+	// Фикс для слайдеров
+	> * {
+		min-width: 0;
+	}
+}
+
+// Ограничивающий контейнер ==================================
+/* CONTAINER */
+
+// (i) Стили будут применяться ко всем классам содержащим *__container
+// Например header__container, main__container и т.д.
+// Снипет (HTML): cnt
+
+@if ($responsiveType==1) {
+	// Отзывчивая
+	[class*='__container'] {
+		@if ($maxWidthContainer > 0) {
+			max-width: rem($maxWidthContainer);
+			box-sizing: content-box;
+			// margin: 0 auto;
+			margin-left: auto;
+			margin-right: auto;
+			@media (min-width: em(1024)) and (max-width: $pc) {
+				max-width: 90vw;
+			}
+		}
+		@if ($containerPadding > 0) {
+			padding: 0 rem($containerPadding / 2);
+		}
+	}
+} @else {
+	// По брейк-поинтам
+	[class*='__container'] {
+		margin: 0 auto;
+		@if ($maxWidthContainer>0) {
+			max-width: rem($maxWidthContainer);
+			box-sizing: content-box;
+		} @else {
+			@if ($containerPadding>0) {
+				padding: 0 rem($containerPadding / 2);
+			}
+		}
+		@media (max-width: $pc) {
+			max-width: rem(1010);
+		}
+		@media (max-width: $laptop) {
+			max-width: rem(1000);
+		}
+		@media (max-width: $tablet) {
+			max-width: rem(750);
+		}
+		@media (max-width: $tabletMobile) {
+			max-width: rem(560);
+		}
+		@media (max-width: $mobileL) {
+			max-width: rem(410);
+		}
+		@media (max-width: $mobileM) {
+			max-width: rem(360);
+		}
+		@media (max-width: $mobileS) {
+			max-width: none;
+			@if ($containerPadding>0 and $maxWidthContainer>0) {
+				padding: 0 rem($containerPadding / 2);
+			}
+		}
+	}
+}
+
+/* Стили для отзывчивых картинок (_ibg) */
+[class*='_ibg'] {
+	position: relative;
+	// _ibg img
+	img {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: 50% 50%;
+	}
+}
+
+[class*='_ibg_contain'] {
+	img {
+		object-fit: contain;
+	}
+}
+
+/* изменение позиционирования изображения */
+// по вертикали
+._ibg-position-y-5 {
+	img {
+		object-position: 50% 5%;
+	}
+}
+._ibg-position-y-15 {
+	img {
+		object-position: 50% 15%;
+	}
+}
+._ibg-position-y-25 {
+	img {
+		object-position: 50% 25%;
+	}
+}
+._ibg-position-y-35 {
+	img {
+		object-position: 50% 35%;
+	}
+}
+._ibg-position-y-60 {
+	img {
+		object-position: 50% 60%;
+	}
+}
+
+// по горизонтали
+._ibg-position-x-30 {
+	img {
+		object-position: 30% 50%;
+	}
+}
+._ibg-position-x-40 {
+	img {
+		object-position: 40% 50%;
+	}
+}
+._ibg-position-x-65 {
+	img {
+		object-position: 65% 50%;
+	}
+}
+._ibg-position-x-100 {
+	img {
+		object-position: 100% 50%;
+	}
+}
+//=======================================================
+// Подключение стилей общих элементов проекта
+@import 'common';
+// Подключение стилей выпадающего меню / sub-menu
+@import 'sub-menu';
+// Подключение стилей icons
+@import 'icons';
+// Подключение стилей отдельных блоков
+@import 'header';
+@import 'page';
+@import 'about';
+@import 'offer';
+@import 'breed';
+@import 'kittens';
+@import 'spoilers';
+@import 'footer';
+@import '404';
+
+//=======================================================

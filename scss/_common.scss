@@ -1,0 +1,302 @@
+[class*="page__"] {
+	// @include adaptiveValue('padding-top', 60, 40);
+	// @include adaptiveValue('padding-bottom', 60, 40);
+}
+
+//=======================================================
+/* BUTTON */
+.button {
+	font-size: rem(14);
+	font-weight: 500;
+	line-height: 1.3;
+	letter-spacing: em(1, 14);
+	text-transform: uppercase;
+	color: $text-color;
+	padding: em(16, 14) em(24, 14);
+	background-color: $dark-background-color;
+	border-radius: em(50, 14);
+	text-align: center;
+	border: rem(1) solid transparent;
+	// border: rem(1) solid $dark-background-color;
+	box-shadow: rem(4) rem(4) rem(6) rgba(0, 0, 0, 0.25);
+	// box-shadow: em(4, 14) em(4, 14) em(6, 14) rgba(0, 0, 0, 0.25);
+	position: relative;
+	overflow: hidden;
+	text-wrap: balance;
+	transition: border 0.5s ease 0s;
+
+	// button текст
+	span {
+		position: relative;
+		z-index: 2;
+		transition: color 0.5s ease 0s;
+	}
+
+	// button gradient color change
+	&::after {
+		position: absolute;
+		content: "";
+		top: -5%;
+		height: 110%;
+		right: -5%;
+		width: 0%;
+		// scale: 0;
+		// left: 50%;
+		// top: 50%;
+		// border-radius: 50%;
+		// height: 0;
+		transition: all 0.5s ease 0s;
+		background: $gradient-color;
+	}
+
+	@media (any-hover: hover) {
+		// .button:hover
+		&:hover {
+			border: rem(1) solid $dark-color;
+			span {
+				color: rgba(255, 255, 255, 1);
+			}
+
+			&::after {
+				width: 110%;
+				left: -5%;
+				// top: -5%;
+				// height: 110%;
+				// scale: 1.1;
+				// border-radius: 0%;
+			}
+		}
+	}
+
+	@media (hover: none) {
+		// .button:active
+		&:active {
+			border: rem(1) solid $dark-color;
+			span {
+				color: rgba(255, 255, 255, 1);
+			}
+
+			&::after {
+				left: -5%;
+				width: 110%;
+			}
+		}
+	}
+
+	// .button:active - при клике на кнопку
+	&:active {
+		box-shadow: rem(2) rem(2) rem(6) rgba(0, 0, 0, 0.25);
+		// box-shadow: em(2, 14) em(2, 14) em(6, 14) rgba(0, 0, 0, 0.25);
+		// position: relative;
+		top: rem(2);
+	}
+
+	@media (forced-colors: active) {
+		border: rem(1) solid LinkText;
+		span {
+			color: LinkText;
+			// transition: all 0s ease 0s;
+		}
+		// transition: all 0s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				// border: rem(1) solid CanvasText;
+				border: rem(1) solid LinkText;
+
+				span {
+					// color: LinkText;
+					color: CanvasText;
+				}
+			}
+		}
+	}
+}
+
+//=======================================================
+/* LABEL */
+.label {
+	display: inline-block;
+	font-size: rem(10);
+	padding: em(11, 10) em(18, 10);
+	border-radius: em(12, 10);
+	border: rem(1) solid rgba($text-color, 0.2);
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: em(2, 10);
+	color: $text-color;
+	text-wrap: nowrap;
+	&:not(:last-child) {
+		@include adaptiveValue("margin-bottom", 30, 20);
+	}
+}
+//=======================================================
+/* TITLE */
+.title {
+	font-family: $title-font-family;
+	color: $title-color;
+	// font-size: rem(42);
+	font-weight: 600;
+	line-height: 1.1;
+	text-wrap: balance;
+	span {
+		white-space: nowrap;
+	}
+	@media (min-width: em(768)) {
+		@include adaptiveValue("font-size", 42, 30, $containerWidth, 768, 1);
+	}
+	@media (max-width: $tablet) {
+		@include adaptiveValue("font-size", 38, 24, 768, $minWidth, 1);
+	}
+}
+
+//=======================================================
+/* TOOLTIP */
+// для _tooltip добавляем class _show-after, чтобы показать знак ?/i как метку того, что есть пояснение
+._tooltip {
+	position: relative;
+
+	// ._tooltip::after
+	&::after {
+		// content: '?';
+		content: "i";
+		font-family: "Source Code Pro", monospace;
+		font-size: em(8, 16);
+		font-style: italic;
+		font-weight: 600;
+		line-height: 1;
+		// background-color: $dark-color;
+		// color: rgba(255, 255, 255, 0.85);
+		// background-color: $light-background-color;
+		background-color: rgba(255, 255, 255, 0.8);
+		color: $text-color;
+		// border: em(1, 8) solid rgba($text-color, 0.5);
+		border: rem(1) solid rgba($text-color, 0.5);
+		position: absolute;
+		// top: em(-5, 16);
+		top: -20%;
+		// right: 0;
+		left: 100.5%;
+
+		box-sizing: content-box;
+		width: em(11, 8);
+		height: em(11, 8);
+		border-radius: 50% 50% 50% 0;
+		// display: flex;
+		align-items: center;
+		justify-content: center;
+		display: none;
+		transition: all 0.4s ease 0s;
+	}
+	// @media (any-hover: hover) {
+	// 	&:hover {
+	// 		&::after {
+	// 			color: rgba(255, 255, 255, 1);
+	// 			background-color: $dark-color;
+	// 		}
+	// 	}
+	// }
+	// @media (hover: none) {
+	// 	&:active,
+	// 	:focus-visible {
+	// 		&::after {
+	// 			color: rgba(255, 255, 255, 1);
+	// 			background-color: $dark-color;
+	// 		}
+	// 	}
+	// }
+	&._active {
+		&::after {
+			color: rgba(255, 255, 255, 1);
+			background-color: $dark-color;
+		}
+	}
+	&._show-after {
+		// padding-right: em(14, 16);
+		// line-height: 1.5;
+		cursor: help;
+		&::after {
+			display: inline-flex;
+		}
+	}
+}
+
+// подсказка
+._tooltip-comment {
+	position: fixed;
+	// font-size: 14px;
+	@include adaptiveValue("font-size", 14, 12);
+	line-height: 1.4;
+	font-style: italic;
+	font-weight: 400;
+	color: $text-color;
+
+	padding: em(12, 14) em(20, 14);
+	border: rem(1) solid rgba($text-color, 0.5);
+	// border-radius: 4px;
+	// border-radius: 30px 0 30px 30px;
+	border-radius: em(30, 14) 0 em(30, 14) em(30, 14);
+
+	background: rgba(255, 255, 255, 1);
+	text-align: left;
+	box-shadow: rem(3) rem(3) rem(3) rgba(0, 0, 0, 0.3);
+	// box-shadow: em(3, 14) em(3, 14) em(3, 14) rgba(0, 0, 0, 0.25);
+	max-width: rem(396);
+	// max-width: 315px;
+	// max-width: calc(100vw - 10px);
+	white-space: normal;
+	z-index: 3;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	// время transition должно быть больше, timeout для destroyTooltip(), иначе не создается при клике/наведении сразу на другой tooltip
+	transition: all 0.4s ease 0s;
+	&._active {
+		opacity: 1;
+		visibility: visible;
+		pointer-events: all;
+	}
+}
+//=======================================================
+/* COOKIE */
+.cookie-notice {
+	background-color: #fff;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding-top: rem(10);
+	padding-bottom: rem(10);
+	z-index: 10;
+	&._hidden {
+		display: none;
+	}
+	// .cookie-notice__container
+	&__container {
+		display: flex;
+		gap: rem(15);
+		align-items: center;
+		@media (max-width: $mobileL) {
+			// flex-wrap: wrap;
+			flex-direction: column;
+		}
+	}
+	// .cookie-notice__text
+	&__text {
+		font-size: rem(14);
+		// flex: 1 1 auto;
+		margin-right: auto;
+		line-height: 1.3;
+	}
+	// .cookie-notice__button
+	&__button {
+		padding: em(8, 14) em(16, 14);
+		box-shadow: rem(3) rem(3) rem(4) rgba(0, 0, 0, 0.25);
+		// box-shadow: em(3, 14) em(3, 14) em(3, 14) rgba(0, 0, 0, 0.25);
+		flex: 0 0 auto;
+		// .button:active - при клике на кнопку
+		&:active {
+			// box-shadow: em(2, 14) em(2, 14) em(2, 14) rgba(0, 0, 0, 0.25);
+			box-shadow: rem(2) rem(2) rem(2) rgba(0, 0, 0, 0.25);
+		}
+	}
+}

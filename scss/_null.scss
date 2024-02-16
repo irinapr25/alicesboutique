@@ -1,0 +1,96 @@
+*,
+*:before,
+*:after {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+}
+html,
+body {
+	height: 100%;
+	min-width: $minWidth + px;
+	// min-height: 100vh;
+}
+body {
+	//text-rendering: optimizeLegibility;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+:focus-visible {
+	// outline: 2px solid #f8312f;
+	outline: rem(2) solid #f8312f;
+	// outline-offset: 2px;
+}
+a:focus-visible {
+	// outline: 2px solid #f8312f;
+	outline: rem(2) solid #f8312f;
+	// outline-offset: 2px;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+}
+button {
+	color: inherit;
+	background-color: inherit;
+	cursor: pointer;
+}
+a {
+	text-decoration: none;
+	// text-wrap: balance;
+	color: inherit;
+	// text-decoration: underline solid transparent;
+	// text-decoration-thickness: em(1, 16);
+	// text-underline-offset: em(2, 16);
+	// transition: text-decoration-color 0.3s ease 0s;
+}
+a:link,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	font-style: italic; // если картинка не отображается, Alt будет написан italic
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	font-weight: inherit;
+	font-size: inherit;
+	// text-wrap: balance;
+}
+// responsive images/videos
+// img,
+// picture,
+// svg,
+// video {
+// 	display: block;
+// 	max-width: 100%;
+// }

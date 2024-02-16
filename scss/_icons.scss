@@ -1,0 +1,102 @@
+/* icons */
+.contact-icon,
+.social-icon {
+	flex: 0 0 rem(40);
+	width: rem(40);
+	height: rem(40);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.3s ease 0s;
+	border: rem(1) solid transparent;
+
+	svg {
+		width: rem(26);
+		height: rem(26);
+		fill: currentColor;
+	}
+}
+
+.contact-icon {
+	color: $dark-background-color;
+	background-color: rgba($text-color, 0.9);
+	@media (any-hover: hover) {
+		.info-main-footer__link:hover & {
+			color: rgba($text-color, 0.9);
+			background-color: $dark-background-color;
+			border: rem(1) solid currentColor;
+			svg {
+				fill: currentColor;
+			}
+		}
+	}
+	@media (any-hover: none) {
+		.info-main-footer__link:active & {
+			color: rgba($text-color, 0.9);
+			background-color: $dark-background-color;
+			border: rem(1) solid currentColor;
+			svg {
+				fill: currentColor;
+			}
+		}
+	}
+}
+
+.social-icon {
+	background-color: currentColor;
+	svg {
+		fill: #fff;
+
+		// когда forced-colors активен
+		@media (forced-colors: active) {
+			fill: LinkText;
+		}
+	}
+	@media (any-hover: hover) {
+		.info-main-footer__link:hover &,
+		.sub-menu__link:hover &,
+		.social__link:hover & {
+			background-color: rgba(#fff, 0.8);
+			border: rem(1) solid currentColor;
+			svg {
+				fill: currentColor;
+			}
+		}
+	}
+	@media (any-hover: none) {
+		.info-main-footer__link:active &,
+		.sub-menu__link:active & {
+			background-color: rgba(#fff, 0.8);
+			border: rem(1) solid currentColor;
+			svg {
+				fill: currentColor;
+			}
+		}
+	}
+
+	// .social-icon_whats-app
+	&_whats-app {
+		color: #25d366;
+	}
+	// .social-icon_telegram
+	&_telegram {
+		color: #1da1f2;
+	}
+	// .social-icon_facebook-mes
+	&_facebook-mes {
+		color: #0a66c2;
+	}
+	// .social-icon_facebook-f
+	&_facebook-f {
+		color: #0a66c2;
+	}
+	// .social-icon_instagram
+	&_instagram {
+		color: #c32aa3;
+	}
+	// .social-icon_instagram
+	&_tik-tok {
+		color: $text-color;
+	}
+}
