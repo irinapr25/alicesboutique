@@ -3,7 +3,7 @@
 import { setPaddingRight } from './modules/functions.js';
 import { removePaddingRight } from './modules/functions.js';
 import { handleGotoLinks } from './modules/smooth-scroll.js';
-// import { languageChange } from './modules/language-change.js';
+import { languageChange } from './modules/language-change.js';
 import { fslightboxJump } from './modules/fslightbox-jump.js';
 import { spoilers } from './modules/spoiler.js';
 import { kittensAvailability } from './modules/kittens.js';
