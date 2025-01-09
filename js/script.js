@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	//=======================================================
 	/* LANGUAGE CHANGE */
-	//languageChange();
+	languageChange();
 	//=======================================================
 
 	/* SPOILERS */
