@@ -9,7 +9,7 @@ langButton.addEventListener('click', function (e) {
 //=======================================================
 // <html lang="ru"> <!-- Устанавливаем язык по умолчанию как "ru" --></html>
 //! язык
-export function languageChange() {
+export function languageChange1() {
 	const lang = document.querySelector('.header__lang.lang');
 	const langButton = document.querySelector('.lang__button');
 	const langLinks = document.querySelectorAll('.lang__link');
@@ -187,3 +187,121 @@ export function languageChange() {
 // 		}
 // 	});
 // });
+
+export function languageChange() {
+    const supportedLangPaths = ['/ru/', '/en/', '/lv/'];
+    const currentPath = window.location.pathname; // Определяем текущий путь
+    console.debug('currentPath', currentPath); // currentPath /
+
+    const lang = document.querySelector('.header__lang.lang');
+    const langButton = document.querySelector('.lang__button');
+    const langLinks = document.querySelectorAll('.lang__link');
+
+    // Получить выбранный язык из локального хранилища или установить по умолчанию
+    let selectedLang = localStorage.getItem('selectedLang') || getBrowserLanguage() || 'en';
+    console.debug('selectedLang', selectedLang); // selectedLang ru
+
+    // Функция для перенаправления на соответствующую страницу с учетом языка
+    function redirectWithLang(lang) {
+        let newPath = `/${lang}/`;
+        console.debug('newPath', newPath);
+
+        // Если текущий путь на корневом уровне, перенаправляем на папку с языком
+        if (currentPath === '/' || !supportedLangPaths.some(path => currentPath.startsWith(path))) {
+            window.location.href = newPath;
+        }
+    }
+
+    // Перенаправление при загрузке страницы с учетом выбранного языка
+    redirectWithLang(selectedLang);
+
+    // Устанавливаем активный язык в зависимости от выбранного
+    langLinks.forEach(function (link) {
+        if (link.getAttribute('data-lang') === selectedLang) {
+            link.classList.add('_active');
+        }
+    });
+
+    // Функция для определения языка браузера:
+    function getBrowserLanguage() {
+        const userLanguage = navigator.language.split('-')[0]; // Извлекаем код языка
+        console.debug('userLanguage', userLanguage); // userLanguage lv
+        const supportedLanguages = ['ru', 'en', 'lv'];
+        const defaultLanguage = 'en'; // язык по умолчанию английский
+
+        return supportedLanguages.includes(userLanguage) ? userLanguage : defaultLanguage;
+    }
+
+    if (langButton) {
+        // Функция для скрытия меню
+        function hideLangMenu() {
+            if (lang.classList.contains('_active')) {
+                lang.classList.remove('_active');
+                langButton.setAttribute('aria-expanded', 'false');
+            }
+        }
+
+        // Функция для переключения видимости меню
+        function toggleLangMenu(e) {
+            e.preventDefault();
+            const langBlock = e.target.closest('.lang');
+            if (langBlock) {
+                langBlock.classList.toggle('_active');
+                const isActive = langBlock.classList.contains('_active');
+                langButton.setAttribute('aria-expanded', isActive.toString());
+            }
+        }
+
+        // Событие: Клик по кнопке выбора языка
+        langButton.addEventListener('click', toggleLangMenu);
+
+        // Событие: Клик вне меню
+        document.addEventListener('click', function (e) {
+            if (!e.target.closest('.lang')) {
+                hideLangMenu();
+            }
+        });
+
+        // Событие: Нажатие клавиши Escape
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                hideLangMenu();
+            }
+        });
+
+        // Событие: Прокрутка окна
+        window.addEventListener('scroll', hideLangMenu);
+
+        // Событие: Перемещение пальца по экрану
+        window.addEventListener('touchmove', hideLangMenu);
+
+        // Событие: Наведение мыши на кнопку
+        langButton.addEventListener('mouseenter', () => {
+            langButton.setAttribute('aria-expanded', 'true');
+        });
+
+        // Событие: Уход мыши с кнопки
+        langButton.addEventListener('mouseleave', () => {
+            langButton.setAttribute('aria-expanded', 'false');
+        });
+    }
+
+    // Обработчик выбора языка через меню
+    langLinks.forEach(function (link) {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            const newLang = link.getAttribute('data-lang');
+
+            // Перенаправляем на соответствующую страницу только если выбранный язык изменился
+            if (newLang !== selectedLang) {
+                redirectWithLang(newLang);
+
+                // Сохраняем выбранный язык в локальном хранилище
+                localStorage.setItem('selectedLang', newLang);
+
+                // Обновляем выбранный язык
+                selectedLang = newLang;
+            }
+        });
+    });
+}
